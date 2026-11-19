@@ -72,6 +72,9 @@ duck_train/                our small Python scripts that reuse upstream code
   replica_config.py        every replica-specific value (IMU mount, servo kp, battery PLACEHOLDER)
   replica_task.py          registers Mjlab-Velocity-Flat-MicroDuck-Replica (51-input policy)
   train.py                 upstream's train command, plus our replica task
+  run_training.py          launcher: --envs/--iterations/--device/--name, logs in out/<name>/
+  export_policy.py         upstream's export, plus our task, plus checks for the robot's walk.py
+  replay_policy.py         run an exported ONNX headless in our task, report falls
 tests/                     our tests (run in upstream's environment)
 print/                     print plates and part list (see print/README.md)
 tools/                     standalone helper tools
@@ -92,6 +95,12 @@ cd third_party/microduck_rl && uv sync          # creates third_party/microduck_
 The environment is `third_party/microduck_rl/.venv`, built from upstream's `uv.lock`.
 Run our scripts in it from the repo root with `uv run --project third_party/microduck_rl ...`.
 Do not use upstream's Jetson install script on the Mac.
+
+## Jetson setup
+
+`jetson/setup_jetson.sh` sets up a Jetson Orin on JetPack 7.2 for GPU training; see
+`jetson/README.md`. It is a dry run unless given `--apply`. It never runs `sudo` itself: it
+prints the system-package commands for you to run. Tested only as a dry run on the Mac so far.
 
 ## Tests (CPU)
 
@@ -152,7 +161,51 @@ This finished in about 10 s and wrote `logs/rsl_rl/velocity_replica/<run>/<run>.
 Tests (from the repo root; about 25 s including a 2-iteration training run):
 
 ```bash
-uv run --project third_party/microduck_rl --with pytest pytest tests/ -q -s     # 10 passed
+uv run --project third_party/microduck_rl --with pytest pytest tests/ -q -s     # 32 passed, ~45 s
+```
+
+Add `-m "not slow"` to skip the train-export-replay test in `tests/test_training_tools.py`.
+
+## Train, export, replay (any machine; run from the repo root or anywhere)
+
+`duck_train/run_training.py` wraps the command above. Each run's logs go to `out/<name>/`
+whatever the current folder is; it refuses to reuse a name unless `--resume` is given, prints
+the exact upstream command it runs, and passes unknown options to upstream unchanged.
+`--device auto` (the default) uses the GPU if torch sees one; `cpu` maps to upstream's
+`--gpu-ids None`, `cuda` to `--gpu-ids [0]`. `--task Mjlab-Velocity-Flat-MicroDuck` trains the
+official 61-input task instead. `--dry-run` prints the command only.
+
+```bash
+# Smoke test, 64 simulations x 5 iterations (about 15 s on the Mac CPU)
+uv run --project third_party/microduck_rl python duck_train/run_training.py --envs 64 --iterations 5 --name smoke
+# Jetson Orin Nano 8 GB (NOT RUN YET): first 512 simulations, then 1024 if memory allows.
+# On the Jetson EVERY `uv run` needs `--no-sync` (export and replay too): a plain `uv run`
+# re-syncs the lock file and puts the CPU-only torch back (see jetson/README.md).
+uv run --no-sync --project third_party/microduck_rl python duck_train/run_training.py --envs 512 --iterations 1000 --device cuda --name orin512
+uv run --no-sync --project third_party/microduck_rl python duck_train/run_training.py --envs 1024 --iterations 1000 --device cuda --name orin1024
+# Continue a run for 1000 more iterations from its newest checkpoint
+uv run --no-sync --project third_party/microduck_rl python duck_train/run_training.py --envs 1024 --iterations 1000 --device cuda --name orin1024 --resume
+```
+
+The iteration counts for the Jetson are a starting point to time, not a tuned value (upstream's
+own default is 50,000 at 4,096 simulations). Checkpoints are saved every 250 iterations and at
+the end.
+
+Export the newest checkpoint of a run to ONNX with upstream's export code (input
+normalisation and metadata included), then check it against what the robot's `walk.py` reads
+(input [1, 51], 14 outputs, joint names and default pose, action scale 1.0). It writes
+`model_<N>.onnx` next to the checkpoint and exits non-zero if a check fails:
+
+```bash
+uv run --project third_party/microduck_rl python duck_train/export_policy.py --run smoke
+```
+
+Replay it headless in the replica task (10 s, 0.2 m/s forward, no pushes) and report falls.
+After 5 iterations the robot falls; this checks the file runs, not that it walks:
+
+```bash
+uv run --project third_party/microduck_rl python duck_train/replay_policy.py \
+  --onnx out/smoke/logs/rsl_rl/velocity_replica/<run>/model_4.onnx
 ```
 
 The `-s` output includes what the replica's published `walk.onnx` does in this task; the same

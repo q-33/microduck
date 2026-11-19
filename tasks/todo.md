@@ -73,30 +73,87 @@ missing its robot model and cannot train as published.
 Open, not blocking steps 1 to 4: battery voltage; which JetPack the Orin Nano gets; whether the
 replica's dimensions match the official model (issue 17); real weights of PETG parts.
 
-## RESUME HERE (written 2026-11-18, 22:35)
+## RESUME HERE (written 2026-11-18, 23:30) — read this first
 
-State: steps 1-4 done, committed and pushed (public repo, `main` at f492949). Steps 5-6 not started.
+State: `main` pushed at 34ea2a6. Everything below is UNCOMMITTED (commit only when the owner asks):
+`duck_train/run_training.py`, `export_policy.py`, `replay_policy.py`, `tests/test_training_tools.py`,
+`tests/conftest.py`, `jetson/` (setup script + README), `README.md`, this file.
+
+Done 2026-11-18 (late):
+- Step 6, training wrapper + export + replay: built, run on the Mac CPU only (64 x 5 smoke ~2.9 s/iteration;
+  export checks all pass: input [1,51], output 14, joint_names, default pose, action scale; 32 tests pass).
+  An independent review was RUNNING when these notes were written: result not seen, treat as unreviewed.
+- Step 5, `jetson/setup_jetson.sh`: dry-run by default, `--apply` only on a Jetson, never runs sudo (prints
+  the commands), deletes nothing, official sources only. shellcheck clean; simulated-Jetson dry-runs accept
+  JetPack 7.2 / L4T 39.2.0 / CUDA 13.2.x and stop on 7.2.1, JetPack 6, wrong CUDA, non-Orin.
+  NOT independently reviewed yet (held back to save usage): do that before first use on the board.
+  Upstream only ran this stack on an Orin NX 16 GB; the Orin Nano 8 GB is unconfirmed.
+- On the Jetson EVERY `uv run` needs `--no-sync` (a plain one reinstalls CPU-only torch). README fixed.
+- Step 6 of the old list (independent review of `replica_task.py`): done, all four requirements met, IMU
+  frame agrees with the robot code numerically. Finding to act on: the robot's stick limits (vx +0.7/-0.5,
+  vtheta 1.5 moving / 3.0 in place) are wider than the trained command range (0.4, 0.3, 1.0): cap on the
+  robot or widen training. Symmetry augmentation must stay off for this task.
+- Loose end: the replica's published walk.onnx showed 1 fall at step 230 in one 10 s test run (earlier notes
+  say it never fell). The wrapper review was asked to measure the fall rate.
+
+Jetson on the duck (plan further down, APPROVED): A fit study RUNNING at time of writing (result not seen);
+B licence request posted (issue 1 on the mount repo, awaiting the author); C payload-in-training NOT started
+(needs the wrapper reviewed and the mount's mass figures from the fit study); D power and E print not started.
 
 Next, in order:
-1. Owner: slice and print `print/prusa_xl_petg/XL01_test_piece.3mf` (parts on head 4 PETG, supports on
-   head 5 PLA, wipe tower moved to the back-right corner). Check XL330 fit and M2 screw bite. Confirm the
-   slicer's extruder numbers match heads 4 and 5 on the printer.
-2. If the bracket fits: print XL02 then XL03 (or split XL03; it is one long 44-part print). Weigh every
-   part and record it in a copy of `tools/duck_mass/weights.template.csv`.
-3. Step 5: our own Jetson setup script (checks JetPack/CUDA first; no mirror, no sudo password in the
-   environment, no deleting folders). Dry-run on the Mac.
-4. Step 6: training wrapper with one setting for parallel simulations (64, then 512-1024), and export
-   through upstream's `scripts/export.py` so input normalisation is baked in.
-5. Small fixes: duck_mass writes absolute paths (generated model and template header) - make them
-   relative/configurable so it works on the Jetson; make the tests skip cleanly when `external/` is absent;
-   load a duck_mass model through the training task, not only plain MuJoCo.
-6. Have a separate reviewer read `duck_train/replica_task.py` against the replica's on-robot code
-   (the IMU frame change especially). It was tested but not independently reviewed.
+1. Read the three pending reports if they arrived (wrapper review, fit study; plugin fixes are in the EBMC
+   repo) or re-run them; fix what the wrapper review found.
+2. Independent review of `jetson/setup_jetson.sh` (opus).
+3. Step C: payload model via `tools/duck_mass` + task `...-Replica-Loaded`.
+4. Owner: slice and print `print/prusa_xl_petg/XL01_test_piece.3mf` (head 4 PETG, head 5 PLA supports);
+   check XL330 fit and M2 screw bite; then XL02, XL03; weigh parts into a copy of
+   `tools/duck_mass/weights.template.csv`.
+5. Small fixes still open: duck_mass writes absolute paths; tests should skip cleanly when `external/` is
+   absent; load a duck_mass model through the training task.
 
 Waiting on others / owner:
 - Battery choice (sets PACK_VOLTAGE_RANGE_V; check the XL330 voltage rating in the ROBOTIS manual first).
 - Reply on https://github.com/AI-FanGe/Microduck-build-tutorial/issues/17 (missing training robot model).
   Read closed issue 12 there (which battery) in a browser.
 - Which Orin Nano variant and JetPack version, on arrival.
+- Owner pointed (2026-11-18) at an existing on-robot Jetson mount: https://github.com/adammong/microduck-jetson-mount
+  (v07: five PETG parts in `clearance_mount/STL/`, saddle + front gate + tray, Jetson in front with its OEM base,
+  4S LiHV 850 mAh pack at the rear for the Jetson; MuJoCo payload model and mass properties included).
+  Read 2026-11-18 (README, clearance_mount/README, THIRD_PARTY only; no files copied). Facts that matter to us:
+  payload estimate 447.6 g on a ~737 g robot; everything is simulation only, its author says physical fit,
+  strength and hardware walking are untested; it is built on the OFFICIAL Pollen model and 61-input alpha
+  policies, so its ONNX files do not fit our replica's 51-input runtime; the repo has NO licence, so link to
+  it, do not copy its files into our public repo.
+  OWNER DECIDED 2026-11-18 23:20: the Jetson RIDES ON THE DUCK. Plan below (AWAITING OWNER'S YES).
+
+## Plan: Jetson on the duck (written 2026-11-18, APPROVED by the owner 23:21)
+
+Status 23:25: B posted as https://github.com/adammong/microduck-jetson-mount/issues/1 (awaiting the author).
+A (fit study) running as a sub-agent. C starts when the training wrapper (step 6) has landed.
+
+Goal: our replica walks carrying the Orin Nano and its battery on the adammong v07 mount, with a 51-input
+policy trained for that load.
+
+- [ ] A. Fit study, read-only: download the mount repo outside ours (git-ignored `external/`), compare its
+      shell/torso reference (official Pollen model) with OUR replica's printed torso and front shell
+      (`print/parts.csv`, the replica STEP/STLs). Check: a written list of the contact surfaces the mount uses
+      (shoulder seats, front shell lobes, two torso M4 bosses at +-40 mm) and whether each exists on our parts.
+- [ ] B. Licence: the mount repo has none. Ask its author (GitHub issue, owner's yes needed before posting)
+      to add one. Until then: print for our own use, link only, nothing of theirs in our repo.
+- [ ] C. Payload in training: add the mount + Jetson + battery as a rigid payload on the trunk in a GENERATED
+      copy of the model (extend `tools/duck_mass`; mass, centre of mass and inertia from the mount's
+      `simulation/mass_properties.json`, replaced by weighed values later), and a task variant
+      `...-Replica-Loaded` that randomises payload mass about +-10 %. Check: generated model total mass =
+      bare mass + payload; the bare task is unchanged; smoke training runs.
+- [ ] D. Power: decide how the Jetson and the servos are fed (mount assumes a 4S LiHV 850 mAh pack for the
+      Jetson only; the servo battery is still not chosen; XL330 supply limits from the ROBOTIS manual). Owner
+      decision, no code.
+- [ ] E. Print: add the five mount STLs to a new XL plate (PETG; saddle and gate need supports) AFTER the
+      bare duck's test piece and plates have printed and fitted.
+- [ ] F. Order of proof: bare duck walks on hardware first; then loaded policy in sim; then mount on the robot.
+
+Risks to keep in view: payload is about 60 % of the bare robot's mass and is untested on hardware by anyone;
+the mount was designed against the official shell, not the replica's; its policies are 61-input and do not
+apply to us.
 - Licence for our own code (NOTICE.md says none chosen).
 - On the real robot: upright, the policy's gravity input should read about (1, 0, 0).
