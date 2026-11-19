@@ -73,9 +73,20 @@ missing its robot model and cannot train as published.
 Open, not blocking steps 1 to 4: battery voltage; which JetPack the Orin Nano gets; whether the
 replica's dimensions match the official model (issue 17); real weights of PETG parts.
 
-## RESUME HERE (written 2026-11-18, 23:30) — read this first
+## RESUME HERE (updated 2026-11-19, 00:12) — read this first
 
-State: `main` pushed at 34ea2a6. Everything below is UNCOMMITTED (commit only when the owner asks):
+State now: `main` pushed at a18959b, working tree clean. Training tools fixed (six review findings, 67 tests
+pass on the Mac CPU, fixes not re-reviewed). Fit study done. parts.csv has `identified_as`.
+NEXT: (1) independent review of `jetson/setup_jetson.sh` (opus), never reviewed; (2) step C of the
+Jetson-on-duck plan: payload model via `tools/duck_mass` + task `...-Replica-Loaded` (figures in the plan);
+(3) cap the robot's stick limits or widen training (replica_task review finding); (4) owner: print
+`print/prusa_xl_petg/XL01_test_piece.3mf`, then measure the nine things listed under plan step A before
+printing the mount. Waiting on: licence reply (mount repo issue 1), model reply (build-tutorial issue 17),
+battery choice, Jetson arrival. Later: the duck-asks-the-Spark plan (after the Jetson-on-duck plan).
+The older text below is kept for detail; where it disagrees, this wins.
+
+
+Earlier state (superseded): `main` was at 34ea2a6 with these files uncommitted:
 `duck_train/run_training.py`, `export_policy.py`, `replay_policy.py`, `tests/test_training_tools.py`,
 `tests/conftest.py`, `jetson/` (setup script + README), `README.md`, this file.
 
@@ -186,3 +197,32 @@ the mount was designed against the official shell, not the replica's; its polici
 apply to us.
 - Licence for our own code (NOTICE.md says none chosen).
 - On the real robot: upright, the policy's gravity input should read about (1, 0, 0).
+
+
+## Plan: the duck asks the DGX Spark (written 2026-11-19, owner said yes to adding it; NOT started)
+
+Goal: the Jetson on the duck sends advanced requests (open-ended speech, questions about a camera frame,
+multi-step plans) over Wi-Fi to a model served on the owner's DGX Spark at home, instead of a cloud service.
+Comes AFTER loaded walking works (Jetson-on-duck plan, steps C and F).
+
+Rule that shapes everything: walking and balance (50 Hz policy) and "stop" stay on the Jetson and never wait
+on the network. The Spark only returns high-level commands, which go through the same velocity-command
+interface the policy already takes.
+
+- [ ] S1. Spark: serve a model behind an OpenAI-compatible HTTP endpoint (Ollama, vLLM, llama.cpp server or
+      NIM: pick after checking what the Spark ships with), wired to the router, reachable on the home network
+      only, with an API key. Check: a request from the Mac returns an answer; note time to first token.
+- [ ] S2. Jetson: a small client with a timeout and a clear "Spark unreachable" result; the address and key
+      come from a local config file that is NOT in the repo (public repo: no addresses, no keys).
+- [ ] S3. Command contract: the model may only answer with a short list of bounded actions (walk/turn for N
+      seconds within the trained command range, stop, sit, stand); anything else is rejected on the Jetson.
+      Tests for the parser and the bounds.
+- [ ] S4. Fallback: when the Spark is slow or unreachable the duck stops and stands, and a small on-board
+      model handles the basic commands (the mount author's repo runs a speech model plus a 350M language
+      model locally: a working example of this half).
+- [ ] S5. In simulation first: text request -> Spark -> bounded command -> simulated duck moves; then the
+      real robot.
+Unknowns to settle (nothing here is verified against current NVIDIA documentation): whether the Orin Nano
+dev kit arrives with a Wi-Fi card; latency at home (expect a few hundred ms to a few seconds: fine for
+planning, useless for balance); which model fits the Spark comfortably; camera frames as single compressed
+images, never a raw stream.
