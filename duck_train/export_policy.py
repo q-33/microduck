@@ -13,7 +13,6 @@ values. Any failed check exits non-zero.
 """
 from __future__ import annotations
 
-import argparse
 import importlib.util
 import math
 import os
@@ -26,6 +25,7 @@ if str(ROOT) not in sys.path:
     sys.path.insert(0, str(ROOT))
 
 from duck_train import replica_config as rc  # noqa: E402
+from duck_train.run_training import OneLineParser, run_dir_for, run_name  # noqa: E402
 
 N_JOINTS = len(rc.JOINT_ORDER)
 
@@ -36,7 +36,7 @@ class ExportCheckError(RuntimeError):
 
 def newest_checkpoint(run_name: str) -> Path:
     """Highest-numbered model_*.pt in the newest upstream run folder under out/<run_name>/."""
-    runs = sorted(p for p in (ROOT / "out" / run_name).glob("logs/rsl_rl/*/*") if p.is_dir())
+    runs = sorted(p for p in run_dir_for(run_name).glob("logs/rsl_rl/*/*") if p.is_dir())
     runs = [r for r in runs if any(r.glob("model_*.pt"))]
     if not runs:
         raise SystemExit(f"no model_*.pt under out/{run_name}/logs/rsl_rl/")
@@ -103,6 +103,17 @@ def check_onnx(onnx_path: Path, task: str) -> list[str]:
     return lines
 
 
+def metadata_run_path(checkpoint: Path) -> str:
+    """What upstream stores as run_path: repo-relative inside the repo, else parent/file.
+
+    Never an absolute path, so no machine-specific folder ends up in the ONNX file.
+    """
+    checkpoint = checkpoint.resolve()
+    if checkpoint.is_relative_to(ROOT):
+        return checkpoint.relative_to(ROOT).as_posix()
+    return f"{checkpoint.parent.name}/{checkpoint.name}"
+
+
 def export(task: str, checkpoint: Path, output: Path, device: str = "cpu") -> Path:
     import duck_train.replica_task  # noqa: F401  (registers the replica task)
     import mjlab.tasks  # noqa: F401  (registers upstream tasks, as export.py's main() does)
@@ -110,19 +121,20 @@ def export(task: str, checkpoint: Path, output: Path, device: str = "cpu") -> Pa
     up = _load_upstream_export()
     checkpoint, output = checkpoint.resolve(), output.resolve()
     output.parent.mkdir(parents=True, exist_ok=True)
-    # Upstream writes the checkpoint path into the ONNX metadata (run_path). Run from the
-    # repo root with a repo-relative path so no machine-specific path ends up in the file.
-    os.chdir(ROOT)
-    ckpt_arg = os.path.relpath(checkpoint, ROOT) if checkpoint.is_relative_to(ROOT) else str(checkpoint)
+    # Upstream writes its checkpoint_file argument verbatim into the ONNX metadata
+    # (run_path). Run from a folder where that short path resolves to the checkpoint.
+    ckpt_arg = metadata_run_path(checkpoint)
+    os.chdir(ROOT if checkpoint.is_relative_to(ROOT) else checkpoint.parent.parent)
     cfg = up.ExportConfig(onnx_file=str(output), checkpoint_file=ckpt_arg, num_envs=1, device=device)
     up.run_export(task, cfg)
+    print(f"[export_policy] run_path metadata written: {ckpt_arg}")
     return output
 
 
 def main(argv: list[str] | None = None) -> int:
-    p = argparse.ArgumentParser(description=__doc__.splitlines()[0])
+    p = OneLineParser(description=__doc__.splitlines()[0])
     src = p.add_mutually_exclusive_group(required=True)
-    src.add_argument("--run", help="run name: newest checkpoint under out/<run>/")
+    src.add_argument("--run", type=run_name, help="run name: newest checkpoint under out/<run>/")
     src.add_argument("--checkpoint", type=Path, help="a model_*.pt file")
     p.add_argument("--task", default=rc.TASK_ID)
     p.add_argument("--output", type=Path, help="default: <checkpoint folder>/<checkpoint name>.onnx")
@@ -133,6 +145,10 @@ def main(argv: list[str] | None = None) -> int:
     if not ckpt.is_file():
         raise SystemExit(f"checkpoint not found: {ckpt}")
     out = (args.output or ckpt.with_suffix(".onnx")).resolve()
+    if args.task != rc.TASK_ID:
+        print(f"[export_policy] WARNING: {args.task} is not the replica task. The replica robot's "
+              f"walk.py cannot use this policy: it treats any input wider than {rc.POLICY_OBS_SIZE} "
+              f"as carrying a phase signal (walk.py:52-54).", file=sys.stderr)
     print(f"[export_policy] task={args.task}\n[export_policy] checkpoint={ckpt}\n[export_policy] output={out}", flush=True)
     export(args.task, ckpt, out, args.device)
     try:

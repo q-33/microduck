@@ -158,21 +158,26 @@ uv run --project ../../third_party/microduck_rl python ../../duck_train/train.py
 This finished in about 10 s and wrote `logs/rsl_rl/velocity_replica/<run>/<run>.onnx` with a
 51-wide input. Upstream's own `uv run train` / `list-envs` do not list the replica task.
 
-Tests (from the repo root; about 25 s including a 2-iteration training run):
+Tests (from the repo root; about 1 minute, including two small training runs and an export):
 
 ```bash
-uv run --project third_party/microduck_rl --with pytest pytest tests/ -q -s     # 32 passed, ~45 s
+uv run --project third_party/microduck_rl --with pytest pytest tests/ -q -s     # 67 passed, ~60 s
 ```
 
-Add `-m "not slow"` to skip the train-export-replay test in `tests/test_training_tools.py`.
+Add `-m "not slow"` to skip the train-export-replay tests in `tests/test_training_tools.py`.
 
-## Train, export, replay (any machine; run from the repo root or anywhere)
+## Train, export, replay (any machine; run from the repo root)
 
 `duck_train/run_training.py` wraps the command above. Each run's logs go to `out/<name>/`
-whatever the current folder is; it refuses to reuse a name unless `--resume` is given, prints
-the exact upstream command it runs, and passes unknown options to upstream unchanged.
+whatever the current folder is. The commands below use repo-relative paths, so run them from
+the repo root; from elsewhere, give both paths in full
+(`uv run --project <repo>/third_party/microduck_rl python <repo>/duck_train/run_training.py ...`).
+It refuses to reuse a name unless `--resume` is given, prints the exact upstream command it
+runs, and passes unknown options to upstream unchanged (except the flags it sets itself, in
+any spelling). If a launch fails before any checkpoint is saved, it removes the folder that
+launch created, so the name can be used again.
 `--device auto` (the default) uses the GPU if torch sees one; `cpu` maps to upstream's
-`--gpu-ids None`, `cuda` to `--gpu-ids [0]`. `--task Mjlab-Velocity-Flat-MicroDuck` trains the
+`--gpu-ids None`, `cuda` to `--gpu-ids [0]`; `--device cuda` stops at once if torch sees no GPU. `--task Mjlab-Velocity-Flat-MicroDuck` trains the
 official 61-input task instead. `--dry-run` prints the command only.
 
 ```bash
@@ -183,7 +188,8 @@ uv run --project third_party/microduck_rl python duck_train/run_training.py --en
 # re-syncs the lock file and puts the CPU-only torch back (see jetson/README.md).
 uv run --no-sync --project third_party/microduck_rl python duck_train/run_training.py --envs 512 --iterations 1000 --device cuda --name orin512
 uv run --no-sync --project third_party/microduck_rl python duck_train/run_training.py --envs 1024 --iterations 1000 --device cuda --name orin1024
-# Continue a run for 1000 more iterations from its newest checkpoint
+# Continue a run for 1000 more iterations from the newest run folder that has a checkpoint
+# (it prints which folder and checkpoint; an interrupted resume that saved nothing is skipped)
 uv run --no-sync --project third_party/microduck_rl python duck_train/run_training.py --envs 1024 --iterations 1000 --device cuda --name orin1024 --resume
 ```
 
@@ -200,8 +206,11 @@ normalisation and metadata included), then check it against what the robot's `wa
 uv run --project third_party/microduck_rl python duck_train/export_policy.py --run smoke
 ```
 
-Replay it headless in the replica task (10 s, 0.2 m/s forward, no pushes) and report falls.
-After 5 iterations the robot falls; this checks the file runs, not that it walks:
+Replay it headless in the replica task: 32 robots side by side for 10 s at 0.2 m/s forward, no
+pushes, seed 1 (`--envs`, `--seconds`, `--lin-vel-x`, `--seed`). It reports "N of 32 robots
+fell (first at step S)", with NaN resets counted apart from falls; the same seed gives the same
+counts. After 5 iterations the robots fall; this checks the file runs, not that it walks. For
+comparison, the replica's published `walk.onnx` measured 2 of 32 falling with seed 1 (about 6 %):
 
 ```bash
 uv run --project third_party/microduck_rl python duck_train/replay_policy.py \
