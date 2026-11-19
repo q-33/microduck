@@ -72,3 +72,31 @@ missing its robot model and cannot train as published.
 
 Open, not blocking steps 1 to 4: battery voltage; which JetPack the Orin Nano gets; whether the
 replica's dimensions match the official model (issue 17); real weights of PETG parts.
+
+## RESUME HERE (written 2026-11-18, 22:35)
+
+State: steps 1-4 done, committed and pushed (public repo, `main` at f492949). Steps 5-6 not started.
+
+Next, in order:
+1. Owner: slice and print `print/prusa_xl_petg/XL01_test_piece.3mf` (parts on head 4 PETG, supports on
+   head 5 PLA, wipe tower moved to the back-right corner). Check XL330 fit and M2 screw bite. Confirm the
+   slicer's extruder numbers match heads 4 and 5 on the printer.
+2. If the bracket fits: print XL02 then XL03 (or split XL03; it is one long 44-part print). Weigh every
+   part and record it in a copy of `tools/duck_mass/weights.template.csv`.
+3. Step 5: our own Jetson setup script (checks JetPack/CUDA first; no mirror, no sudo password in the
+   environment, no deleting folders). Dry-run on the Mac.
+4. Step 6: training wrapper with one setting for parallel simulations (64, then 512-1024), and export
+   through upstream's `scripts/export.py` so input normalisation is baked in.
+5. Small fixes: duck_mass writes absolute paths (generated model and template header) - make them
+   relative/configurable so it works on the Jetson; make the tests skip cleanly when `external/` is absent;
+   load a duck_mass model through the training task, not only plain MuJoCo.
+6. Have a separate reviewer read `duck_train/replica_task.py` against the replica's on-robot code
+   (the IMU frame change especially). It was tested but not independently reviewed.
+
+Waiting on others / owner:
+- Battery choice (sets PACK_VOLTAGE_RANGE_V; check the XL330 voltage rating in the ROBOTIS manual first).
+- Reply on https://github.com/AI-FanGe/Microduck-build-tutorial/issues/17 (missing training robot model).
+  Read closed issue 12 there (which battery) in a browser.
+- Which Orin Nano variant and JetPack version, on arrival.
+- Licence for our own code (NOTICE.md says none chosen).
+- On the real robot: upright, the policy's gravity input should read about (1, 0, 0).
