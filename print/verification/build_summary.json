@@ -1,0 +1,66 @@
+{
+ "mk": [
+  {
+   "plate": "01_test_piece_N0",
+   "source": "NylonG_PulseXE/N0_test_piece.3mf",
+   "parts": 1,
+   "reused_unchanged": true
+  },
+  {
+   "plate": "02_frame_N1a",
+   "source": "NylonG_PulseXE/N1_frame_1.3mf",
+   "parts": 6,
+   "reused_unchanged": true
+  },
+  {
+   "plate": "03_frame_N1b",
+   "source": "NylonG_PulseXE/N1_frame_2.3mf",
+   "parts": 12,
+   "reused_unchanged": true
+  },
+  {
+   "plate": "04_legs_feet_N2",
+   "source": "NylonG_PulseXE/N2_legs_feet_1.3mf",
+   "parts": 4,
+   "reused_unchanged": true
+  },
+  {
+   "plate": "05_bearings_horns_P3",
+   "source": "PLA_Prusa/P3_bearings_horns_1.3mf",
+   "parts": 36,
+   "reused_unchanged": true
+  },
+  {
+   "plate": "06_shells_beak_P1",
+   "source": "PLA_Prusa/P1_shells_beak_1.3mf",
+   "parts": 5,
+   "reused_unchanged": true
+  },
+  {
+   "plate": "07_soles_ring_P2",
+   "source": "PLA_Prusa/P2_soles_ring_1.3mf",
+   "parts": 3,
+   "reused_unchanged": true
+  }
+ ],
+ "xl": [
+  {
+   "plate": "XL01_test_piece",
+   "parts": 1
+  },
+  {
+   "plate": "XL02_structural",
+   "parts": 22
+  },
+  {
+   "plate": "XL03_shells_bearings_horns",
+   "parts": 44
+  }
+ ],
+ "totals_g": {
+  "pla_solid": 303.5,
+  "pla_rough": 254.3,
+  "petg_solid": 310.8,
+  "petg_rough": 260.5
+ }
+}

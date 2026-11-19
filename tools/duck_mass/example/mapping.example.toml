@@ -1,0 +1,10 @@
+# MADE-UP EXAMPLE. The part-to-body assignments and the 14.0 g and 12.0 g below are
+# invented to show the file format. They are not facts about the robot.
+
+[bodies.ankle_left]
+parts = ["plate5_sole_111_id44.stl", "plate1_foot-housing_grbrgn_id64.stl"]
+non_printed_g = 14.0
+
+[bodies.ankle_right]
+parts = ["plate5_sole_222_id46.stl", "plate1_foot-housing_thngthm_id66.stl"]
+non_printed_g = 12.0

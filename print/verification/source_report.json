@@ -1,0 +1,4720 @@
+{
+ "original": {
+  "parts": 67,
+  "on_plates": 65,
+  "per_plate": {
+   "1": 4,
+   "2": 5,
+   "3": 19,
+   "4": 34,
+   "5": 3,
+   "none": 2
+  },
+  "objects": {
+   "2": {
+    "name": "3.obj",
+    "plate": "1",
+    "size": [
+     91.759,
+     117.116,
+     20.061
+    ],
+    "watertight": true,
+    "volume_mm3": 23795.48895941468,
+    "bodies": 1
+   },
+   "4": {
+    "name": "4.obj",
+    "plate": "1",
+    "size": [
+     91.413,
+     69.436,
+     29.045
+    ],
+    "watertight": true,
+    "volume_mm3": 9359.72186678186,
+    "bodies": 1
+   },
+   "6": {
+    "name": "5.obj",
+    "plate": "2",
+    "size": [
+     91.76,
+     61.925,
+     116.073
+    ],
+    "watertight": true,
+    "volume_mm3": 29871.73783864174,
+    "bodies": 1
+   },
+   "8": {
+    "name": "7.obj",
+    "plate": "2",
+    "size": [
+     41.69,
+     80.888,
+     33.714
+    ],
+    "watertight": true,
+    "volume_mm3": 11389.370881058945,
+    "bodies": 1
+   },
+   "10": {
+    "name": "8.obj",
+    "plate": "2",
+    "size": [
+     42.423,
+     80.55,
+     32.02
+    ],
+    "watertight": true,
+    "volume_mm3": 11216.911755870096,
+    "bodies": 1
+   },
+   "12": {
+    "name": "a.obj",
+    "plate": "3",
+    "size": [
+     54.498,
+     83.49,
+     17.0
+    ],
+    "watertight": true,
+    "volume_mm3": 10487.498002825383,
+    "bodies": 1
+   },
+   "14": {
+    "name": "b.obj",
+    "plate": "3",
+    "size": [
+     32.45,
+     19.0,
+     34.5
+    ],
+    "watertight": true,
+    "volume_mm3": 4524.959422705239,
+    "bodies": 1
+   },
+   "16": {
+    "name": "d.obj",
+    "plate": "3",
+    "size": [
+     20.0,
+     11.0,
+     2.0
+    ],
+    "watertight": true,
+    "volume_mm3": 399.8855258349201,
+    "bodies": 1
+   },
+   "18": {
+    "name": "e.obj",
+    "plate": "3",
+    "size": [
+     20.0,
+     11.0,
+     2.0
+    ],
+    "watertight": true,
+    "volume_mm3": 399.8855258349231,
+    "bodies": 1
+   },
+   "20": {
+    "name": "f.obj",
+    "plate": "3",
+    "size": [
+     58.056,
+     44.996,
+     0.998
+    ],
+    "watertight": true,
+    "volume_mm3": 746.271041110352,
+    "bodies": 1
+   },
+   "22": {
+    "name": "g.obj",
+    "plate": "3",
+    "size": [
+     58.056,
+     44.996,
+     0.998
+    ],
+    "watertight": true,
+    "volume_mm3": 746.2710411103448,
+    "bodies": 1
+   },
+   "24": {
+    "name": "h.obj",
+    "plate": "3",
+    "size": [
+     54.2,
+     73.5,
+     18.8
+    ],
+    "watertight": true,
+    "volume_mm3": 7513.951045009676,
+    "bodies": 1
+   },
+   "26": {
+    "name": "i.obj",
+    "plate": "3",
+    "size": [
+     54.048,
+     6.67,
+     3.802
+    ],
+    "watertight": true,
+    "volume_mm3": 459.64046578943726,
+    "bodies": 1
+   },
+   "28": {
+    "name": "j.obj",
+    "plate": "3",
+    "size": [
+     35.0,
+     17.998,
+     27.694
+    ],
+    "watertight": true,
+    "volume_mm3": 4115.8753980078045,
+    "bodies": 1
+   },
+   "30": {
+    "name": "k.obj",
+    "plate": "3",
+    "size": [
+     20.0,
+     57.998,
+     7.95
+    ],
+    "watertight": true,
+    "volume_mm3": 3405.573133871745,
+    "bodies": 1
+   },
+   "32": {
+    "name": "l.obj",
+    "plate": "3",
+    "size": [
+     20.002,
+     57.998,
+     7.95
+    ],
+    "watertight": true,
+    "volume_mm3": 3405.6593002217414,
+    "bodies": 1
+   },
+   "34": {
+    "name": "m.obj",
+    "plate": "3",
+    "size": [
+     56.998,
+     36.0,
+     3.0
+    ],
+    "watertight": true,
+    "volume_mm3": 1415.066538829148,
+    "bodies": 1
+   },
+   "36": {
+    "name": "n.obj",
+    "plate": "3",
+    "size": [
+     22.998,
+     20.498,
+     25.8
+    ],
+    "watertight": true,
+    "volume_mm3": 2816.028680447911,
+    "bodies": 1
+   },
+   "38": {
+    "name": "o.obj",
+    "plate": "3",
+    "size": [
+     22.998,
+     20.498,
+     25.8
+    ],
+    "watertight": true,
+    "volume_mm3": 2816.0286804479233,
+    "bodies": 1
+   },
+   "40": {
+    "name": "p.obj",
+    "plate": "3",
+    "size": [
+     87.817,
+     33.319,
+     3.008
+    ],
+    "watertight": true,
+    "volume_mm3": 2700.60532317441,
+    "bodies": 1
+   },
+   "42": {
+    "name": "q.obj",
+    "plate": "3",
+    "size": [
+     87.667,
+     32.882,
+     8.619
+    ],
+    "watertight": true,
+    "volume_mm3": 18600.510272095835,
+    "bodies": 1
+   },
+   "44": {
+    "name": "111.obj",
+    "plate": "5",
+    "size": [
+     54.01,
+     41.203,
+     18.363
+    ],
+    "watertight": true,
+    "volume_mm3": 18427.019475568988,
+    "bodies": 1
+   },
+   "46": {
+    "name": "222.obj",
+    "plate": "5",
+    "size": [
+     54.026,
+     41.219,
+     18.382
+    ],
+    "watertight": true,
+    "volume_mm3": 18427.473237072893,
+    "bodies": 1
+   },
+   "48": {
+    "name": "333.obj",
+    "plate": "5",
+    "size": [
+     30.0,
+     30.0,
+     9.5
+    ],
+    "watertight": true,
+    "volume_mm3": 4251.302295819219,
+    "bodies": 1
+   },
+   "50": {
+    "name": "dfvdfb.obj",
+    "plate": "4",
+    "size": [
+     22.998,
+     40.0,
+     2.998
+    ],
+    "watertight": true,
+    "volume_mm3": 625.1986180947944,
+    "bodies": 1
+   },
+   "51": {
+    "name": "dfvdfb.obj",
+    "plate": "4",
+    "size": [
+     22.998,
+     40.0,
+     2.998
+    ],
+    "watertight": true,
+    "volume_mm3": 625.1986180947955,
+    "bodies": 1
+   },
+   "53": {
+    "name": "ersgtbgertgestrg.obj",
+    "plate": "4",
+    "size": [
+     21.998,
+     22.0,
+     4.0
+    ],
+    "watertight": true,
+    "volume_mm3": 664.6719142126127,
+    "bodies": 1
+   },
+   "55": {
+    "name": "idle_horn.stl",
+    "plate": "none",
+    "size": [
+     16.0,
+     16.0,
+     4.15
+    ],
+    "watertight": true,
+    "volume_mm3": 464.5321555667712,
+    "bodies": 1
+   },
+   "56": {
+    "name": "idle_horn.stl",
+    "plate": "none",
+    "size": [
+     16.0,
+     16.0,
+     4.15
+    ],
+    "watertight": true,
+    "volume_mm3": 464.5321555667615,
+    "bodies": 1
+   },
+   "57": {
+    "name": "idle_horn.stl",
+    "plate": "4",
+    "size": [
+     16.0,
+     16.0,
+     4.15
+    ],
+    "watertight": true,
+    "volume_mm3": 464.5321555667803,
+    "bodies": 1
+   },
+   "59": {
+    "name": "idle_cap.stl",
+    "plate": "4",
+    "size": [
+     6.8,
+     6.8,
+     4.6
+    ],
+    "watertight": true,
+    "volume_mm3": 65.37632277838266,
+    "bodies": 1
+   },
+   "60": {
+    "name": "b.obj",
+    "plate": "3",
+    "size": [
+     32.45,
+     19.0,
+     34.5
+    ],
+    "watertight": true,
+    "volume_mm3": 4524.959422705171,
+    "bodies": 1
+   },
+   "62": {
+    "name": "rgbn.obj",
+    "plate": "4",
+    "size": [
+     14.6,
+     14.6,
+     3.0
+    ],
+    "watertight": true,
+    "volume_mm3": 282.87476006953074,
+    "bodies": 1
+   },
+   "64": {
+    "name": "grbrgn.obj",
+    "plate": "1",
+    "size": [
+     36.5,
+     25.498,
+     39.488
+    ],
+    "watertight": true,
+    "volume_mm3": 6200.670000675146,
+    "bodies": 1
+   },
+   "66": {
+    "name": "thngthm.obj",
+    "plate": "1",
+    "size": [
+     36.5,
+     25.498,
+     39.49
+    ],
+    "watertight": true,
+    "volume_mm3": 6200.592551902773,
+    "bodies": 1
+   },
+   "68": {
+    "name": "rgbn.obj",
+    "plate": "4",
+    "size": [
+     14.6,
+     14.6,
+     3.0
+    ],
+    "watertight": true,
+    "volume_mm3": 282.87476006953085,
+    "bodies": 1
+   },
+   "70": {
+    "name": "dfbdfbbbbb1.obj",
+    "plate": "3",
+    "size": [
+     35.898,
+     34.0,
+     22.5
+    ],
+    "watertight": true,
+    "volume_mm3": 4553.857759084455,
+    "bodies": 1
+   },
+   "72": {
+    "name": "fgb.obj",
+    "plate": "2",
+    "size": [
+     60.998,
+     47.658,
+     27.998
+    ],
+    "watertight": true,
+    "volume_mm3": 4150.395015359332,
+    "bodies": 1
+   },
+   "74": {
+    "name": "gbgb.obj",
+    "plate": "2",
+    "size": [
+     60.998,
+     47.658,
+     27.998
+    ],
+    "watertight": true,
+    "volume_mm3": 4150.017534352063,
+    "bodies": 1
+   },
+   "76": {
+    "name": "ghmghmghmghm.obj",
+    "plate": "3",
+    "size": [
+     87.65,
+     44.626,
+     12.498
+    ],
+    "watertight": true,
+    "volume_mm3": 5823.688979941214,
+    "bodies": 1
+   },
+   "77": {
+    "name": "idle_horn.stl",
+    "plate": "4",
+    "size": [
+     16.0,
+     16.0,
+     4.15
+    ],
+    "watertight": true,
+    "volume_mm3": 464.5321555667812,
+    "bodies": 1
+   },
+   "78": {
+    "name": "idle_cap.stl",
+    "plate": "4",
+    "size": [
+     6.8,
+     6.8,
+     4.6
+    ],
+    "watertight": true,
+    "volume_mm3": 65.3763227783826,
+    "bodies": 1
+   },
+   "79": {
+    "name": "idle_horn.stl",
+    "plate": "4",
+    "size": [
+     16.0,
+     16.0,
+     4.15
+    ],
+    "watertight": true,
+    "volume_mm3": 464.5321555667785,
+    "bodies": 1
+   },
+   "80": {
+    "name": "idle_cap.stl",
+    "plate": "4",
+    "size": [
+     6.8,
+     6.8,
+     4.6
+    ],
+    "watertight": true,
+    "volume_mm3": 65.3763227783827,
+    "bodies": 1
+   },
+   "81": {
+    "name": "idle_horn.stl",
+    "plate": "4",
+    "size": [
+     16.0,
+     16.0,
+     4.15
+    ],
+    "watertight": true,
+    "volume_mm3": 464.5321555667809,
+    "bodies": 1
+   },
+   "82": {
+    "name": "idle_cap.stl",
+    "plate": "4",
+    "size": [
+     6.8,
+     6.8,
+     4.6
+    ],
+    "watertight": true,
+    "volume_mm3": 65.37632277838172,
+    "bodies": 1
+   },
+   "83": {
+    "name": "idle_horn.stl",
+    "plate": "4",
+    "size": [
+     16.0,
+     16.0,
+     4.15
+    ],
+    "watertight": true,
+    "volume_mm3": 464.5321555667803,
+    "bodies": 1
+   },
+   "84": {
+    "name": "idle_cap.stl",
+    "plate": "4",
+    "size": [
+     6.8,
+     6.8,
+     4.6
+    ],
+    "watertight": true,
+    "volume_mm3": 65.3763227783818,
+    "bodies": 1
+   },
+   "85": {
+    "name": "idle_horn.stl",
+    "plate": "4",
+    "size": [
+     16.0,
+     16.0,
+     4.15
+    ],
+    "watertight": true,
+    "volume_mm3": 464.5321555667809,
+    "bodies": 1
+   },
+   "86": {
+    "name": "idle_cap.stl",
+    "plate": "4",
+    "size": [
+     6.8,
+     6.8,
+     4.6
+    ],
+    "watertight": true,
+    "volume_mm3": 65.37632277838271,
+    "bodies": 1
+   },
+   "87": {
+    "name": "ersgtbgertgestrg.obj",
+    "plate": "4",
+    "size": [
+     21.998,
+     22.0,
+     4.0
+    ],
+    "watertight": true,
+    "volume_mm3": 664.671914212613,
+    "bodies": 1
+   },
+   "88": {
+    "name": "ersgtbgertgestrg.obj",
+    "plate": "4",
+    "size": [
+     21.998,
+     22.0,
+     4.0
+    ],
+    "watertight": true,
+    "volume_mm3": 664.6719142126134,
+    "bodies": 1
+   },
+   "89": {
+    "name": "ersgtbgertgestrg.obj",
+    "plate": "4",
+    "size": [
+     21.998,
+     22.0,
+     4.0
+    ],
+    "watertight": true,
+    "volume_mm3": 664.6719142126125,
+    "bodies": 1
+   },
+   "90": {
+    "name": "ersgtbgertgestrg.obj",
+    "plate": "4",
+    "size": [
+     21.998,
+     22.0,
+     4.0
+    ],
+    "watertight": true,
+    "volume_mm3": 664.671914212613,
+    "bodies": 1
+   },
+   "91": {
+    "name": "ersgtbgertgestrg.obj",
+    "plate": "4",
+    "size": [
+     21.998,
+     22.0,
+     4.0
+    ],
+    "watertight": true,
+    "volume_mm3": 664.671914212613,
+    "bodies": 1
+   },
+   "92": {
+    "name": "ersgtbgertgestrg.obj",
+    "plate": "4",
+    "size": [
+     21.998,
+     22.0,
+     4.0
+    ],
+    "watertight": true,
+    "volume_mm3": 664.6719142126143,
+    "bodies": 1
+   },
+   "93": {
+    "name": "ersgtbgertgestrg.obj",
+    "plate": "4",
+    "size": [
+     21.998,
+     22.0,
+     4.0
+    ],
+    "watertight": true,
+    "volume_mm3": 664.6719142126118,
+    "bodies": 1
+   },
+   "94": {
+    "name": "ersgtbgertgestrg.obj",
+    "plate": "4",
+    "size": [
+     21.998,
+     22.0,
+     4.0
+    ],
+    "watertight": true,
+    "volume_mm3": 664.671914212613,
+    "bodies": 1
+   },
+   "95": {
+    "name": "ersgtbgertgestrg.obj",
+    "plate": "4",
+    "size": [
+     21.998,
+     22.0,
+     4.0
+    ],
+    "watertight": true,
+    "volume_mm3": 664.6719142126125,
+    "bodies": 1
+   },
+   "96": {
+    "name": "ersgtbgertgestrg.obj",
+    "plate": "4",
+    "size": [
+     21.998,
+     22.0,
+     4.0
+    ],
+    "watertight": true,
+    "volume_mm3": 664.6719142126129,
+    "bodies": 1
+   },
+   "97": {
+    "name": "ersgtbgertgestrg.obj",
+    "plate": "4",
+    "size": [
+     21.998,
+     22.0,
+     4.0
+    ],
+    "watertight": true,
+    "volume_mm3": 664.671914212613,
+    "bodies": 1
+   },
+   "98": {
+    "name": "ersgtbgertgestrg.obj",
+    "plate": "4",
+    "size": [
+     21.998,
+     22.0,
+     4.0
+    ],
+    "watertight": true,
+    "volume_mm3": 664.6719142126125,
+    "bodies": 1
+   },
+   "99": {
+    "name": "ersgtbgertgestrg.obj",
+    "plate": "4",
+    "size": [
+     21.998,
+     22.0,
+     4.0
+    ],
+    "watertight": true,
+    "volume_mm3": 664.671914212613,
+    "bodies": 1
+   },
+   "100": {
+    "name": "ersgtbgertgestrg.obj",
+    "plate": "4",
+    "size": [
+     21.998,
+     22.0,
+     4.0
+    ],
+    "watertight": true,
+    "volume_mm3": 664.671914212613,
+    "bodies": 1
+   },
+   "101": {
+    "name": "ersgtbgertgestrg.obj",
+    "plate": "4",
+    "size": [
+     21.998,
+     22.0,
+     4.0
+    ],
+    "watertight": true,
+    "volume_mm3": 664.6719142126136,
+    "bodies": 1
+   },
+   "102": {
+    "name": "ersgtbgertgestrg.obj",
+    "plate": "4",
+    "size": [
+     21.998,
+     22.0,
+     4.0
+    ],
+    "watertight": true,
+    "volume_mm3": 664.6719142126136,
+    "bodies": 1
+   },
+   "103": {
+    "name": "ersgtbgertgestrg.obj",
+    "plate": "4",
+    "size": [
+     21.998,
+     22.0,
+     4.0
+    ],
+    "watertight": true,
+    "volume_mm3": 664.671914212613,
+    "bodies": 1
+   }
+  }
+ },
+ "plates": {
+  "NylonG_PulseXE/N0_test_piece.3mf": {
+   "parts": 1,
+   "extent_min": [
+    107.0,
+    96.0,
+    0.0
+   ],
+   "extent_max": [
+    142.0,
+    114.0,
+    27.69
+   ],
+   "fits_240x200_usable": true,
+   "min_bbox_gap_mm": null,
+   "entries": [
+    {
+     "name": "plate3_frame_j_id28",
+     "verts": 6061,
+     "faces": 12158,
+     "min": [
+      107.0,
+      96.0,
+      0.0
+     ],
+     "max": [
+      142.0,
+      113.998,
+      27.694
+     ],
+     "size": [
+      35.0,
+      17.998,
+      27.694
+     ],
+     "watertight": true,
+     "winding_consistent": true,
+     "volume_mm3": 4115.875022749339,
+     "area_mm2": 3847.701214569239,
+     "bodies": 1,
+     "degenerate_faces": 0,
+     "same_orientation_as_original": true,
+     "volume_matches_original": true,
+     "original_plate": "3"
+    }
+   ]
+  },
+  "NylonG_PulseXE/N1_frame_1.3mf": {
+   "parts": 6,
+   "extent_min": [
+    38.65,
+    41.76,
+    0.0
+   ],
+   "extent_max": [
+    211.35,
+    178.24,
+    18.8
+   ],
+   "fits_240x200_usable": true,
+   "min_bbox_gap_mm": 8.0,
+   "entries": [
+    {
+     "name": "plate3_frame_a_id12",
+     "verts": 6391,
+     "faces": 12846,
+     "min": [
+      38.65,
+      41.757,
+      0.0
+     ],
+     "max": [
+      93.148,
+      125.247,
+      17.0
+     ],
+     "size": [
+      54.498,
+      83.49,
+      17.0
+     ],
+     "watertight": true,
+     "winding_consistent": true,
+     "volume_mm3": 10487.498059226666,
+     "area_mm2": 12649.85865607997,
+     "bodies": 1,
+     "degenerate_faces": 0,
+     "same_orientation_as_original": true,
+     "volume_matches_original": true,
+     "original_plate": "3"
+    },
+    {
+     "name": "plate3_frame_h_id24",
+     "verts": 1855,
+     "faces": 3726,
+     "min": [
+      101.148,
+      41.757,
+      0.0
+     ],
+     "max": [
+      155.348,
+      115.257,
+      18.8
+     ],
+     "size": [
+      54.2,
+      73.5,
+      18.8
+     ],
+     "watertight": true,
+     "winding_consistent": true,
+     "volume_mm3": 7513.951983416019,
+     "area_mm2": 9654.800424789195,
+     "bodies": 1,
+     "degenerate_faces": 0,
+     "same_orientation_as_original": true,
+     "volume_matches_original": true,
+     "original_plate": "3"
+    },
+    {
+     "name": "plate3_frame_k_id30",
+     "verts": 7419,
+     "faces": 14866,
+     "min": [
+      163.348,
+      41.757,
+      0.0
+     ],
+     "max": [
+      183.348,
+      99.755,
+      7.95
+     ],
+     "size": [
+      20.0,
+      57.998,
+      7.95
+     ],
+     "watertight": true,
+     "winding_consistent": true,
+     "volume_mm3": 3405.5739539640003,
+     "area_mm2": 3234.332791904624,
+     "bodies": 1,
+     "degenerate_faces": 0,
+     "same_orientation_as_original": true,
+     "volume_matches_original": true,
+     "original_plate": "3"
+    },
+    {
+     "name": "plate3_frame_l_id32",
+     "verts": 7419,
+     "faces": 14866,
+     "min": [
+      191.348,
+      41.757,
+      0.0
+     ],
+     "max": [
+      211.35,
+      99.755,
+      7.95
+     ],
+     "size": [
+      20.002,
+      57.998,
+      7.95
+     ],
+     "watertight": true,
+     "winding_consistent": true,
+     "volume_mm3": 3405.658496337334,
+     "area_mm2": 3234.0781947446676,
+     "bodies": 1,
+     "degenerate_faces": 0,
+     "same_orientation_as_original": true,
+     "volume_matches_original": true,
+     "original_plate": "3"
+    },
+    {
+     "name": "plate3_frame_g_id22",
+     "verts": 1784,
+     "faces": 3600,
+     "min": [
+      38.65,
+      133.247,
+      0.0
+     ],
+     "max": [
+      96.706,
+      178.243,
+      0.998
+     ],
+     "size": [
+      58.056,
+      44.996,
+      0.998
+     ],
+     "watertight": true,
+     "winding_consistent": true,
+     "volume_mm3": 746.269691556,
+     "area_mm2": 1954.4580133563845,
+     "bodies": 1,
+     "degenerate_faces": 0,
+     "same_orientation_as_original": true,
+     "volume_matches_original": true,
+     "original_plate": "3"
+    },
+    {
+     "name": "plate3_frame_f_id20",
+     "verts": 1784,
+     "faces": 3600,
+     "min": [
+      104.706,
+      133.247,
+      0.0
+     ],
+     "max": [
+      162.762,
+      178.243,
+      0.998
+     ],
+     "size": [
+      58.056,
+      44.996,
+      0.998
+     ],
+     "watertight": true,
+     "winding_consistent": true,
+     "volume_mm3": 746.2696915560003,
+     "area_mm2": 1954.4580133563838,
+     "bodies": 1,
+     "degenerate_faces": 0,
+     "same_orientation_as_original": true,
+     "volume_matches_original": true,
+     "original_plate": "3"
+    }
+   ]
+  },
+  "NylonG_PulseXE/N1_frame_2.3mf": {
+   "parts": 12,
+   "extent_min": [
+    26.73,
+    45.44,
+    0.0
+   ],
+   "extent_max": [
+    223.27,
+    174.56,
+    34.5
+   ],
+   "fits_240x200_usable": true,
+   "min_bbox_gap_mm": 8.0,
+   "entries": [
+    {
+     "name": "plate3_frame_ghmghmghmghm_id76",
+     "verts": 5739,
+     "faces": 11494,
+     "min": [
+      26.727,
+      45.444,
+      0.0
+     ],
+     "max": [
+      114.377,
+      90.07,
+      12.498
+     ],
+     "size": [
+      87.65,
+      44.626,
+      12.498
+     ],
+     "watertight": true,
+     "winding_consistent": true,
+     "volume_mm3": 5823.6854754000005,
+     "area_mm2": 8399.790437710912,
+     "bodies": 1,
+     "degenerate_faces": 0,
+     "same_orientation_as_original": true,
+     "volume_matches_original": true,
+     "original_plate": "3"
+    },
+    {
+     "name": "plate3_frame_m_id34",
+     "verts": 1839,
+     "faces": 3702,
+     "min": [
+      122.377,
+      45.444,
+      0.0
+     ],
+     "max": [
+      179.375,
+      81.444,
+      3.0
+     ],
+     "size": [
+      56.998,
+      36.0,
+      3.0
+     ],
+     "watertight": true,
+     "winding_consistent": true,
+     "volume_mm3": 1415.0665133333341,
+     "area_mm2": 3197.80402951601,
+     "bodies": 1,
+     "degenerate_faces": 0,
+     "same_orientation_as_original": true,
+     "volume_matches_original": true,
+     "original_plate": "3"
+    },
+    {
+     "name": "plate3_frame_dfbdfbbbbb1_id70",
+     "verts": 4866,
+     "faces": 9772,
+     "min": [
+      187.375,
+      45.444,
+      0.0
+     ],
+     "max": [
+      223.273,
+      79.444,
+      22.5
+     ],
+     "size": [
+      35.898,
+      34.0,
+      22.5
+     ],
+     "watertight": true,
+     "winding_consistent": true,
+     "volume_mm3": 4553.861694393326,
+     "area_mm2": 4724.685708538307,
+     "bodies": 1,
+     "degenerate_faces": 0,
+     "same_orientation_as_original": true,
+     "volume_matches_original": true,
+     "original_plate": "3"
+    },
+    {
+     "name": "plate3_frame_p_id40",
+     "verts": 4950,
+     "faces": 9896,
+     "min": [
+      26.727,
+      98.07,
+      0.0
+     ],
+     "max": [
+      114.544,
+      131.389,
+      3.008
+     ],
+     "size": [
+      87.817,
+      33.319,
+      3.008
+     ],
+     "watertight": true,
+     "winding_consistent": true,
+     "volume_mm3": 2700.582666846787,
+     "area_mm2": 6227.068999726128,
+     "bodies": 1,
+     "degenerate_faces": 0,
+     "same_orientation_as_original": true,
+     "volume_matches_original": true,
+     "original_plate": "3"
+    },
+    {
+     "name": "plate3_frame_q_id42",
+     "verts": 3971,
+     "faces": 7938,
+     "min": [
+      122.544,
+      98.07,
+      0.0
+     ],
+     "max": [
+      210.211,
+      130.952,
+      8.618
+     ],
+     "size": [
+      87.667,
+      32.882,
+      8.618
+     ],
+     "watertight": true,
+     "winding_consistent": true,
+     "volume_mm3": 18600.503785509063,
+     "area_mm2": 6449.386764340984,
+     "bodies": 1,
+     "degenerate_faces": 0,
+     "same_orientation_as_original": true,
+     "volume_matches_original": true,
+     "original_plate": "3"
+    },
+    {
+     "name": "plate3_frame_n_id36",
+     "verts": 6306,
+     "faces": 12644,
+     "min": [
+      26.727,
+      139.389,
+      0.0
+     ],
+     "max": [
+      49.725,
+      159.887,
+      25.8
+     ],
+     "size": [
+      22.998,
+      20.498,
+      25.8
+     ],
+     "watertight": true,
+     "winding_consistent": true,
+     "volume_mm3": 2816.028791618671,
+     "area_mm2": 2858.7225581818493,
+     "bodies": 1,
+     "degenerate_faces": 0,
+     "same_orientation_as_original": true,
+     "volume_matches_original": true,
+     "original_plate": "3"
+    },
+    {
+     "name": "plate3_frame_o_id38",
+     "verts": 6306,
+     "faces": 12644,
+     "min": [
+      57.725,
+      139.389,
+      0.0
+     ],
+     "max": [
+      80.723,
+      159.887,
+      25.8
+     ],
+     "size": [
+      22.998,
+      20.498,
+      25.8
+     ],
+     "watertight": true,
+     "winding_consistent": true,
+     "volume_mm3": 2816.028791618666,
+     "area_mm2": 2858.7225581818493,
+     "bodies": 1,
+     "degenerate_faces": 0,
+     "same_orientation_as_original": true,
+     "volume_matches_original": true,
+     "original_plate": "3"
+    },
+    {
+     "name": "plate3_frame_b_id14",
+     "verts": 10502,
+     "faces": 21038,
+     "min": [
+      88.723,
+      139.389,
+      0.0
+     ],
+     "max": [
+      121.173,
+      158.389,
+      34.5
+     ],
+     "size": [
+      32.45,
+      19.0,
+      34.5
+     ],
+     "watertight": true,
+     "winding_consistent": true,
+     "volume_mm3": 4524.94727714133,
+     "area_mm2": 3359.447139920694,
+     "bodies": 1,
+     "degenerate_faces": 0,
+     "same_orientation_as_original": true,
+     "volume_matches_original": true,
+     "original_plate": "3"
+    },
+    {
+     "name": "plate3_frame_b_id60",
+     "verts": 10502,
+     "faces": 21038,
+     "min": [
+      129.173,
+      139.389,
+      0.0
+     ],
+     "max": [
+      161.623,
+      158.389,
+      34.5
+     ],
+     "size": [
+      32.45,
+      19.0,
+      34.5
+     ],
+     "watertight": true,
+     "winding_consistent": true,
+     "volume_mm3": 4524.9472771413275,
+     "area_mm2": 3359.4471399206927,
+     "bodies": 1,
+     "degenerate_faces": 0,
+     "same_orientation_as_original": true,
+     "volume_matches_original": true,
+     "original_plate": "3"
+    },
+    {
+     "name": "plate3_frame_d_id16",
+     "verts": 1256,
+     "faces": 2524,
+     "min": [
+      169.623,
+      139.389,
+      0.0
+     ],
+     "max": [
+      189.623,
+      150.389,
+      2.0
+     ],
+     "size": [
+      20.0,
+      11.0,
+      2.0
+     ],
+     "watertight": true,
+     "winding_consistent": true,
+     "volume_mm3": 399.8855229999994,
+     "area_mm2": 574.8026128112467,
+     "bodies": 1,
+     "degenerate_faces": 0,
+     "same_orientation_as_original": true,
+     "volume_matches_original": true,
+     "original_plate": "3"
+    },
+    {
+     "name": "plate3_frame_e_id18",
+     "verts": 1256,
+     "faces": 2524,
+     "min": [
+      197.623,
+      139.389,
+      0.0
+     ],
+     "max": [
+      217.623,
+      150.389,
+      2.0
+     ],
+     "size": [
+      20.0,
+      11.0,
+      2.0
+     ],
+     "watertight": true,
+     "winding_consistent": true,
+     "volume_mm3": 399.8855229999994,
+     "area_mm2": 574.8026128112467,
+     "bodies": 1,
+     "degenerate_faces": 0,
+     "same_orientation_as_original": true,
+     "volume_matches_original": true,
+     "original_plate": "3"
+    },
+    {
+     "name": "plate3_frame_i_id26",
+     "verts": 781,
+     "faces": 1566,
+     "min": [
+      26.727,
+      167.887,
+      0.0
+     ],
+     "max": [
+      80.775,
+      174.557,
+      3.802
+     ],
+     "size": [
+      54.048,
+      6.67,
+      3.802
+     ],
+     "watertight": true,
+     "winding_consistent": true,
+     "volume_mm3": 459.6350538533939,
+     "area_mm2": 822.4655311496259,
+     "bodies": 1,
+     "degenerate_faces": 0,
+     "same_orientation_as_original": true,
+     "volume_matches_original": true,
+     "original_plate": "3"
+    }
+   ]
+  },
+  "NylonG_PulseXE/N2_legs_feet_1.3mf": {
+   "parts": 4,
+   "extent_min": [
+    34.44,
+    69.56,
+    0.0
+   ],
+   "extent_max": [
+    215.56,
+    150.44,
+    39.49
+   ],
+   "fits_240x200_usable": true,
+   "min_bbox_gap_mm": 8.0,
+   "entries": [
+    {
+     "name": "plate2_leg-link_7_id8",
+     "verts": 10438,
+     "faces": 20898,
+     "min": [
+      34.444,
+      69.556,
+      0.0
+     ],
+     "max": [
+      76.134,
+      150.444,
+      33.714
+     ],
+     "size": [
+      41.69,
+      80.888,
+      33.714
+     ],
+     "watertight": true,
+     "winding_consistent": true,
+     "volume_mm3": 11389.382894573324,
+     "area_mm2": 11541.830987983296,
+     "bodies": 1,
+     "degenerate_faces": 0,
+     "same_orientation_as_original": true,
+     "volume_matches_original": true,
+     "original_plate": "2"
+    },
+    {
+     "name": "plate2_leg-link_8_id10",
+     "verts": 10438,
+     "faces": 20896,
+     "min": [
+      84.134,
+      69.556,
+      0.0
+     ],
+     "max": [
+      126.557,
+      150.106,
+      32.02
+     ],
+     "size": [
+      42.423,
+      80.55,
+      32.02
+     ],
+     "watertight": true,
+     "winding_consistent": true,
+     "volume_mm3": 11216.903282238898,
+     "area_mm2": 11335.797930050245,
+     "bodies": 1,
+     "degenerate_faces": 0,
+     "same_orientation_as_original": true,
+     "volume_matches_original": true,
+     "original_plate": "2"
+    },
+    {
+     "name": "plate1_foot-housing_grbrgn_id64",
+     "verts": 2882,
+     "faces": 5788,
+     "min": [
+      134.556,
+      69.556,
+      0.0
+     ],
+     "max": [
+      171.056,
+      95.054,
+      39.488
+     ],
+     "size": [
+      36.5,
+      25.498,
+      39.488
+     ],
+     "watertight": true,
+     "winding_consistent": true,
+     "volume_mm3": 6200.670217854665,
+     "area_mm2": 5541.432722038373,
+     "bodies": 1,
+     "degenerate_faces": 0,
+     "same_orientation_as_original": true,
+     "volume_matches_original": true,
+     "original_plate": "1"
+    },
+    {
+     "name": "plate1_foot-housing_thngthm_id66",
+     "verts": 2882,
+     "faces": 5788,
+     "min": [
+      179.056,
+      69.556,
+      0.0
+     ],
+     "max": [
+      215.556,
+      95.054,
+      39.49
+     ],
+     "size": [
+      36.5,
+      25.498,
+      39.49
+     ],
+     "watertight": true,
+     "winding_consistent": true,
+     "volume_mm3": 6200.592805846663,
+     "area_mm2": 5541.419592045246,
+     "bodies": 1,
+     "degenerate_faces": 0,
+     "same_orientation_as_original": true,
+     "volume_matches_original": true,
+     "original_plate": "1"
+    }
+   ]
+  },
+  "PLA_Prusa/P1_shells_beak_1.3mf": {
+   "parts": 5,
+   "extent_min": [
+    12.12,
+    12.48,
+    0.0
+   ],
+   "extent_max": [
+    237.88,
+    197.52,
+    116.07
+   ],
+   "fits_240x200_usable": true,
+   "min_bbox_gap_mm": 6.0,
+   "entries": [
+    {
+     "name": "plate1_beak-tray_3_id2",
+     "verts": 10793,
+     "faces": 21602,
+     "min": [
+      12.122,
+      12.479,
+      0.0
+     ],
+     "max": [
+      103.881,
+      129.595,
+      20.061
+     ],
+     "size": [
+      91.759,
+      117.116,
+      20.061
+     ],
+     "watertight": true,
+     "winding_consistent": true,
+     "volume_mm3": 23795.48774047327,
+     "area_mm2": 29133.109622986016,
+     "bodies": 1,
+     "degenerate_faces": 0,
+     "same_orientation_as_original": true,
+     "volume_matches_original": true,
+     "original_plate": "1"
+    },
+    {
+     "name": "plate1_beak-jaw_4_id4",
+     "verts": 14151,
+     "faces": 28322,
+     "min": [
+      109.881,
+      12.479,
+      0.0
+     ],
+     "max": [
+      201.294,
+      81.914,
+      29.044
+     ],
+     "size": [
+      91.413,
+      69.436,
+      29.044
+     ],
+     "watertight": true,
+     "winding_consistent": true,
+     "volume_mm3": 9359.758237693713,
+     "area_mm2": 11074.296004395066,
+     "bodies": 1,
+     "degenerate_faces": 0,
+     "same_orientation_as_original": true,
+     "volume_matches_original": true,
+     "original_plate": "1"
+    },
+    {
+     "name": "plate2_big-shell_5_id6",
+     "verts": 8059,
+     "faces": 16114,
+     "min": [
+      12.122,
+      135.595,
+      0.0
+     ],
+     "max": [
+      103.882,
+      197.52,
+      116.073
+     ],
+     "size": [
+      91.76,
+      61.926,
+      116.073
+     ],
+     "watertight": true,
+     "winding_consistent": true,
+     "volume_mm3": 29871.78952597617,
+     "area_mm2": 34531.10926107326,
+     "bodies": 1,
+     "degenerate_faces": 0,
+     "same_orientation_as_original": true,
+     "volume_matches_original": true,
+     "original_plate": "2"
+    },
+    {
+     "name": "plate2_cover_fgb_id72",
+     "verts": 6389,
+     "faces": 12782,
+     "min": [
+      109.882,
+      135.595,
+      0.0
+     ],
+     "max": [
+      170.88,
+      183.253,
+      27.998
+     ],
+     "size": [
+      60.998,
+      47.658,
+      27.998
+     ],
+     "watertight": true,
+     "winding_consistent": true,
+     "volume_mm3": 4150.394457050662,
+     "area_mm2": 8530.895615614363,
+     "bodies": 1,
+     "degenerate_faces": 0,
+     "same_orientation_as_original": true,
+     "volume_matches_original": true,
+     "original_plate": "2"
+    },
+    {
+     "name": "plate2_cover_gbgb_id74",
+     "verts": 6355,
+     "faces": 12714,
+     "min": [
+      176.88,
+      135.595,
+      0.0
+     ],
+     "max": [
+      237.878,
+      183.253,
+      27.998
+     ],
+     "size": [
+      60.998,
+      47.658,
+      27.998
+     ],
+     "watertight": true,
+     "winding_consistent": true,
+     "volume_mm3": 4150.016869334679,
+     "area_mm2": 8530.610793368698,
+     "bodies": 1,
+     "degenerate_faces": 0,
+     "same_orientation_as_original": true,
+     "volume_matches_original": true,
+     "original_plate": "2"
+    }
+   ]
+  },
+  "PLA_Prusa/P2_soles_ring_1.3mf": {
+   "parts": 3,
+   "extent_min": [
+    49.98,
+    84.39,
+    0.0
+   ],
+   "extent_max": [
+    200.02,
+    125.61,
+    18.38
+   ],
+   "fits_240x200_usable": true,
+   "min_bbox_gap_mm": 6.0,
+   "entries": [
+    {
+     "name": "plate5_sole_222_id46",
+     "verts": 22461,
+     "faces": 45648,
+     "min": [
+      49.982,
+      84.391,
+      0.0
+     ],
+     "max": [
+      104.008,
+      125.61,
+      18.382
+     ],
+     "size": [
+      54.026,
+      41.219,
+      18.382
+     ],
+     "watertight": true,
+     "winding_consistent": true,
+     "volume_mm3": 18427.481122901227,
+     "area_mm2": 16056.6244258944,
+     "bodies": 1,
+     "degenerate_faces": 0,
+     "same_orientation_as_original": true,
+     "volume_matches_original": true,
+     "original_plate": "5"
+    },
+    {
+     "name": "plate5_sole_111_id44",
+     "verts": 22719,
+     "faces": 46258,
+     "min": [
+      110.008,
+      84.391,
+      0.0
+     ],
+     "max": [
+      164.018,
+      125.594,
+      18.363
+     ],
+     "size": [
+      54.01,
+      41.203,
+      18.363
+     ],
+     "watertight": true,
+     "winding_consistent": true,
+     "volume_mm3": 18427.017222095674,
+     "area_mm2": 16043.02258318059,
+     "bodies": 1,
+     "degenerate_faces": 0,
+     "same_orientation_as_original": true,
+     "volume_matches_original": true,
+     "original_plate": "5"
+    },
+    {
+     "name": "plate5_ring_333_id48",
+     "verts": 498,
+     "faces": 996,
+     "min": [
+      170.018,
+      84.391,
+      0.0
+     ],
+     "max": [
+      200.018,
+      114.391,
+      9.5
+     ],
+     "size": [
+      30.0,
+      30.0,
+      9.5
+     ],
+     "watertight": true,
+     "winding_consistent": true,
+     "volume_mm3": 4251.302247829337,
+     "area_mm2": 2164.0005406630225,
+     "bodies": 1,
+     "degenerate_faces": 0,
+     "same_orientation_as_original": true,
+     "volume_matches_original": true,
+     "original_plate": "5"
+    }
+   ]
+  },
+  "PLA_Prusa/P3_bearings_horns_1.3mf": {
+   "parts": 36,
+   "extent_min": [
+    10.01,
+    49.0,
+    0.0
+   ],
+   "extent_max": [
+    239.99,
+    161.0,
+    4.6
+   ],
+   "fits_240x200_usable": true,
+   "min_bbox_gap_mm": 4.0,
+   "entries": [
+    {
+     "name": "plate4_bearing_dfvdfb_id50",
+     "verts": 1241,
+     "faces": 2498,
+     "min": [
+      10.009,
+      49.0,
+      0.0
+     ],
+     "max": [
+      33.007,
+      89.0,
+      2.998
+     ],
+     "size": [
+      22.998,
+      40.0,
+      2.998
+     ],
+     "watertight": true,
+     "winding_consistent": true,
+     "volume_mm3": 625.1984846920001,
+     "area_mm2": 1461.561066127335,
+     "bodies": 1,
+     "degenerate_faces": 0,
+     "same_orientation_as_original": true,
+     "volume_matches_original": true,
+     "original_plate": "4"
+    },
+    {
+     "name": "plate4_bearing_dfvdfb_id51",
+     "verts": 1241,
+     "faces": 2498,
+     "min": [
+      37.007,
+      49.0,
+      0.0
+     ],
+     "max": [
+      60.005,
+      89.0,
+      2.998
+     ],
+     "size": [
+      22.998,
+      40.0,
+      2.998
+     ],
+     "watertight": true,
+     "winding_consistent": true,
+     "volume_mm3": 625.1984846919996,
+     "area_mm2": 1461.5610661273345,
+     "bodies": 1,
+     "degenerate_faces": 0,
+     "same_orientation_as_original": true,
+     "volume_matches_original": true,
+     "original_plate": "4"
+    },
+    {
+     "name": "plate4_bearing_ersgtbgertgestrg_id95",
+     "verts": 5550,
+     "faces": 11100,
+     "min": [
+      64.005,
+      49.0,
+      0.0
+     ],
+     "max": [
+      86.003,
+      71.0,
+      4.0
+     ],
+     "size": [
+      21.998,
+      22.0,
+      4.0
+     ],
+     "watertight": true,
+     "winding_consistent": true,
+     "volume_mm3": 664.6719113626668,
+     "area_mm2": 777.9149879691997,
+     "bodies": 1,
+     "degenerate_faces": 0,
+     "same_orientation_as_original": true,
+     "volume_matches_original": true,
+     "original_plate": "4"
+    },
+    {
+     "name": "plate4_bearing_ersgtbgertgestrg_id96",
+     "verts": 5550,
+     "faces": 11100,
+     "min": [
+      90.003,
+      49.0,
+      0.0
+     ],
+     "max": [
+      112.001,
+      71.0,
+      4.0
+     ],
+     "size": [
+      21.998,
+      22.0,
+      4.0
+     ],
+     "watertight": true,
+     "winding_consistent": true,
+     "volume_mm3": 664.6719113626672,
+     "area_mm2": 777.9149879691997,
+     "bodies": 1,
+     "degenerate_faces": 0,
+     "same_orientation_as_original": true,
+     "volume_matches_original": true,
+     "original_plate": "4"
+    },
+    {
+     "name": "plate4_bearing_ersgtbgertgestrg_id97",
+     "verts": 5550,
+     "faces": 11100,
+     "min": [
+      116.001,
+      49.0,
+      0.0
+     ],
+     "max": [
+      137.999,
+      71.0,
+      4.0
+     ],
+     "size": [
+      21.998,
+      22.0,
+      4.0
+     ],
+     "watertight": true,
+     "winding_consistent": true,
+     "volume_mm3": 664.6719113626665,
+     "area_mm2": 777.9149879691997,
+     "bodies": 1,
+     "degenerate_faces": 0,
+     "same_orientation_as_original": true,
+     "volume_matches_original": true,
+     "original_plate": "4"
+    },
+    {
+     "name": "plate4_bearing_ersgtbgertgestrg_id53",
+     "verts": 5550,
+     "faces": 11100,
+     "min": [
+      141.999,
+      49.0,
+      0.0
+     ],
+     "max": [
+      163.997,
+      71.0,
+      4.0
+     ],
+     "size": [
+      21.998,
+      22.0,
+      4.0
+     ],
+     "watertight": true,
+     "winding_consistent": true,
+     "volume_mm3": 664.6719113626677,
+     "area_mm2": 777.9149879691997,
+     "bodies": 1,
+     "degenerate_faces": 0,
+     "same_orientation_as_original": true,
+     "volume_matches_original": true,
+     "original_plate": "4"
+    },
+    {
+     "name": "plate4_bearing_ersgtbgertgestrg_id87",
+     "verts": 5550,
+     "faces": 11100,
+     "min": [
+      167.997,
+      49.0,
+      0.0
+     ],
+     "max": [
+      189.995,
+      71.0,
+      4.0
+     ],
+     "size": [
+      21.998,
+      22.0,
+      4.0
+     ],
+     "watertight": true,
+     "winding_consistent": true,
+     "volume_mm3": 664.6719113626659,
+     "area_mm2": 777.9149879691998,
+     "bodies": 1,
+     "degenerate_faces": 0,
+     "same_orientation_as_original": true,
+     "volume_matches_original": true,
+     "original_plate": "4"
+    },
+    {
+     "name": "plate4_bearing_ersgtbgertgestrg_id88",
+     "verts": 5550,
+     "faces": 11100,
+     "min": [
+      193.995,
+      49.0,
+      0.0
+     ],
+     "max": [
+      215.993,
+      71.0,
+      4.0
+     ],
+     "size": [
+      21.998,
+      22.0,
+      4.0
+     ],
+     "watertight": true,
+     "winding_consistent": true,
+     "volume_mm3": 664.6719113626665,
+     "area_mm2": 777.9149879691998,
+     "bodies": 1,
+     "degenerate_faces": 0,
+     "same_orientation_as_original": true,
+     "volume_matches_original": true,
+     "original_plate": "4"
+    },
+    {
+     "name": "plate4_bearing_ersgtbgertgestrg_id89",
+     "verts": 5550,
+     "faces": 11100,
+     "min": [
+      10.009,
+      93.0,
+      0.0
+     ],
+     "max": [
+      32.007,
+      115.0,
+      4.0
+     ],
+     "size": [
+      21.998,
+      22.0,
+      4.0
+     ],
+     "watertight": true,
+     "winding_consistent": true,
+     "volume_mm3": 664.6719113626667,
+     "area_mm2": 777.9149879691997,
+     "bodies": 1,
+     "degenerate_faces": 0,
+     "same_orientation_as_original": true,
+     "volume_matches_original": true,
+     "original_plate": "4"
+    },
+    {
+     "name": "plate4_bearing_ersgtbgertgestrg_id90",
+     "verts": 5550,
+     "faces": 11100,
+     "min": [
+      36.007,
+      93.0,
+      0.0
+     ],
+     "max": [
+      58.005,
+      115.0,
+      4.0
+     ],
+     "size": [
+      21.998,
+      22.0,
+      4.0
+     ],
+     "watertight": true,
+     "winding_consistent": true,
+     "volume_mm3": 664.6719113626668,
+     "area_mm2": 777.9149879691996,
+     "bodies": 1,
+     "degenerate_faces": 0,
+     "same_orientation_as_original": true,
+     "volume_matches_original": true,
+     "original_plate": "4"
+    },
+    {
+     "name": "plate4_bearing_ersgtbgertgestrg_id91",
+     "verts": 5550,
+     "faces": 11100,
+     "min": [
+      62.005,
+      93.0,
+      0.0
+     ],
+     "max": [
+      84.003,
+      115.0,
+      4.0
+     ],
+     "size": [
+      21.998,
+      22.0,
+      4.0
+     ],
+     "watertight": true,
+     "winding_consistent": true,
+     "volume_mm3": 664.6719113626668,
+     "area_mm2": 777.9149879691997,
+     "bodies": 1,
+     "degenerate_faces": 0,
+     "same_orientation_as_original": true,
+     "volume_matches_original": true,
+     "original_plate": "4"
+    },
+    {
+     "name": "plate4_bearing_ersgtbgertgestrg_id92",
+     "verts": 5550,
+     "faces": 11100,
+     "min": [
+      88.003,
+      93.0,
+      0.0
+     ],
+     "max": [
+      110.001,
+      115.0,
+      4.0
+     ],
+     "size": [
+      21.998,
+      22.0,
+      4.0
+     ],
+     "watertight": true,
+     "winding_consistent": true,
+     "volume_mm3": 664.6719113626674,
+     "area_mm2": 777.9149879691997,
+     "bodies": 1,
+     "degenerate_faces": 0,
+     "same_orientation_as_original": true,
+     "volume_matches_original": true,
+     "original_plate": "4"
+    },
+    {
+     "name": "plate4_bearing_ersgtbgertgestrg_id93",
+     "verts": 5550,
+     "faces": 11100,
+     "min": [
+      114.001,
+      93.0,
+      0.0
+     ],
+     "max": [
+      135.999,
+      115.0,
+      4.0
+     ],
+     "size": [
+      21.998,
+      22.0,
+      4.0
+     ],
+     "watertight": true,
+     "winding_consistent": true,
+     "volume_mm3": 664.6719113626665,
+     "area_mm2": 777.9149879691997,
+     "bodies": 1,
+     "degenerate_faces": 0,
+     "same_orientation_as_original": true,
+     "volume_matches_original": true,
+     "original_plate": "4"
+    },
+    {
+     "name": "plate4_bearing_ersgtbgertgestrg_id94",
+     "verts": 5550,
+     "faces": 11100,
+     "min": [
+      139.999,
+      93.0,
+      0.0
+     ],
+     "max": [
+      161.997,
+      115.0,
+      4.0
+     ],
+     "size": [
+      21.998,
+      22.0,
+      4.0
+     ],
+     "watertight": true,
+     "winding_consistent": true,
+     "volume_mm3": 664.6719113626672,
+     "area_mm2": 777.9149879691997,
+     "bodies": 1,
+     "degenerate_faces": 0,
+     "same_orientation_as_original": true,
+     "volume_matches_original": true,
+     "original_plate": "4"
+    },
+    {
+     "name": "plate4_bearing_ersgtbgertgestrg_id98",
+     "verts": 5550,
+     "faces": 11100,
+     "min": [
+      165.997,
+      93.0,
+      0.0
+     ],
+     "max": [
+      187.995,
+      115.0,
+      4.0
+     ],
+     "size": [
+      21.998,
+      22.0,
+      4.0
+     ],
+     "watertight": true,
+     "winding_consistent": true,
+     "volume_mm3": 664.6719113626672,
+     "area_mm2": 777.9149879691997,
+     "bodies": 1,
+     "degenerate_faces": 0,
+     "same_orientation_as_original": true,
+     "volume_matches_original": true,
+     "original_plate": "4"
+    },
+    {
+     "name": "plate4_bearing_ersgtbgertgestrg_id99",
+     "verts": 5550,
+     "faces": 11100,
+     "min": [
+      191.995,
+      93.0,
+      0.0
+     ],
+     "max": [
+      213.993,
+      115.0,
+      4.0
+     ],
+     "size": [
+      21.998,
+      22.0,
+      4.0
+     ],
+     "watertight": true,
+     "winding_consistent": true,
+     "volume_mm3": 664.6719113626665,
+     "area_mm2": 777.9149879691997,
+     "bodies": 1,
+     "degenerate_faces": 0,
+     "same_orientation_as_original": true,
+     "volume_matches_original": true,
+     "original_plate": "4"
+    },
+    {
+     "name": "plate4_bearing_ersgtbgertgestrg_id100",
+     "verts": 5550,
+     "faces": 11100,
+     "min": [
+      217.993,
+      93.0,
+      0.0
+     ],
+     "max": [
+      239.991,
+      115.0,
+      4.0
+     ],
+     "size": [
+      21.998,
+      22.0,
+      4.0
+     ],
+     "watertight": true,
+     "winding_consistent": true,
+     "volume_mm3": 664.6719113626659,
+     "area_mm2": 777.9149879691997,
+     "bodies": 1,
+     "degenerate_faces": 0,
+     "same_orientation_as_original": true,
+     "volume_matches_original": true,
+     "original_plate": "4"
+    },
+    {
+     "name": "plate4_bearing_ersgtbgertgestrg_id101",
+     "verts": 5550,
+     "faces": 11100,
+     "min": [
+      10.009,
+      119.0,
+      0.0
+     ],
+     "max": [
+      32.007,
+      141.0,
+      4.0
+     ],
+     "size": [
+      21.998,
+      22.0,
+      4.0
+     ],
+     "watertight": true,
+     "winding_consistent": true,
+     "volume_mm3": 664.6719113626668,
+     "area_mm2": 777.9149879691997,
+     "bodies": 1,
+     "degenerate_faces": 0,
+     "same_orientation_as_original": true,
+     "volume_matches_original": true,
+     "original_plate": "4"
+    },
+    {
+     "name": "plate4_bearing_ersgtbgertgestrg_id102",
+     "verts": 5550,
+     "faces": 11100,
+     "min": [
+      36.007,
+      119.0,
+      0.0
+     ],
+     "max": [
+      58.005,
+      141.0,
+      4.0
+     ],
+     "size": [
+      21.998,
+      22.0,
+      4.0
+     ],
+     "watertight": true,
+     "winding_consistent": true,
+     "volume_mm3": 664.6719113626668,
+     "area_mm2": 777.9149879691997,
+     "bodies": 1,
+     "degenerate_faces": 0,
+     "same_orientation_as_original": true,
+     "volume_matches_original": true,
+     "original_plate": "4"
+    },
+    {
+     "name": "plate4_bearing_ersgtbgertgestrg_id103",
+     "verts": 5550,
+     "faces": 11100,
+     "min": [
+      62.005,
+      119.0,
+      0.0
+     ],
+     "max": [
+      84.003,
+      141.0,
+      4.0
+     ],
+     "size": [
+      21.998,
+      22.0,
+      4.0
+     ],
+     "watertight": true,
+     "winding_consistent": true,
+     "volume_mm3": 664.6719113626665,
+     "area_mm2": 777.9149879691997,
+     "bodies": 1,
+     "degenerate_faces": 0,
+     "same_orientation_as_original": true,
+     "volume_matches_original": true,
+     "original_plate": "4"
+    },
+    {
+     "name": "plate4_bearing_idle_horn_id81",
+     "verts": 8361,
+     "faces": 16738,
+     "min": [
+      88.003,
+      119.0,
+      0.0
+     ],
+     "max": [
+      104.003,
+      135.0,
+      4.15
+     ],
+     "size": [
+      16.0,
+      16.0,
+      4.15
+     ],
+     "watertight": true,
+     "winding_consistent": true,
+     "volume_mm3": 464.5332504242021,
+     "area_mm2": 639.8512052612103,
+     "bodies": 1,
+     "degenerate_faces": 0,
+     "same_orientation_as_original": true,
+     "volume_matches_original": true,
+     "original_plate": "4"
+    },
+    {
+     "name": "plateX_spare-horn_idle_horn_id55",
+     "verts": 8361,
+     "faces": 16738,
+     "min": [
+      108.003,
+      119.0,
+      0.0
+     ],
+     "max": [
+      124.003,
+      135.0,
+      4.15
+     ],
+     "size": [
+      16.0,
+      16.0,
+      4.15
+     ],
+     "watertight": true,
+     "winding_consistent": true,
+     "volume_mm3": 464.53325045996127,
+     "area_mm2": 639.8512051244546,
+     "bodies": 1,
+     "degenerate_faces": 0,
+     "same_orientation_as_original": true,
+     "volume_matches_original": true,
+     "original_plate": "none"
+    },
+    {
+     "name": "plateX_spare-horn_idle_horn_id56",
+     "verts": 8361,
+     "faces": 16738,
+     "min": [
+      128.003,
+      119.0,
+      0.0
+     ],
+     "max": [
+      144.003,
+      135.0,
+      4.15
+     ],
+     "size": [
+      16.0,
+      16.0,
+      4.15
+     ],
+     "watertight": true,
+     "winding_consistent": true,
+     "volume_mm3": 464.5332503884438,
+     "area_mm2": 639.8512053979662,
+     "bodies": 1,
+     "degenerate_faces": 0,
+     "same_orientation_as_original": true,
+     "volume_matches_original": true,
+     "original_plate": "none"
+    },
+    {
+     "name": "plate4_bearing_idle_horn_id57",
+     "verts": 8361,
+     "faces": 16738,
+     "min": [
+      148.003,
+      119.0,
+      0.0
+     ],
+     "max": [
+      164.003,
+      135.0,
+      4.15
+     ],
+     "size": [
+      16.0,
+      16.0,
+      4.15
+     ],
+     "watertight": true,
+     "winding_consistent": true,
+     "volume_mm3": 464.53325038844497,
+     "area_mm2": 639.8512053979662,
+     "bodies": 1,
+     "degenerate_faces": 0,
+     "same_orientation_as_original": true,
+     "volume_matches_original": true,
+     "original_plate": "4"
+    },
+    {
+     "name": "plate4_bearing_idle_horn_id77",
+     "verts": 8361,
+     "faces": 16738,
+     "min": [
+      168.003,
+      119.0,
+      0.0
+     ],
+     "max": [
+      184.003,
+      135.0,
+      4.15
+     ],
+     "size": [
+      16.0,
+      16.0,
+      4.15
+     ],
+     "watertight": true,
+     "winding_consistent": true,
+     "volume_mm3": 464.53325045995797,
+     "area_mm2": 639.8512051244547,
+     "bodies": 1,
+     "degenerate_faces": 0,
+     "same_orientation_as_original": true,
+     "volume_matches_original": true,
+     "original_plate": "4"
+    },
+    {
+     "name": "plate4_bearing_idle_horn_id79",
+     "verts": 8361,
+     "faces": 16738,
+     "min": [
+      188.003,
+      119.0,
+      0.0
+     ],
+     "max": [
+      204.003,
+      135.0,
+      4.15
+     ],
+     "size": [
+      16.0,
+      16.0,
+      4.15
+     ],
+     "watertight": true,
+     "winding_consistent": true,
+     "volume_mm3": 464.53325045995797,
+     "area_mm2": 639.8512051244547,
+     "bodies": 1,
+     "degenerate_faces": 0,
+     "same_orientation_as_original": true,
+     "volume_matches_original": true,
+     "original_plate": "4"
+    },
+    {
+     "name": "plate4_bearing_idle_horn_id83",
+     "verts": 8361,
+     "faces": 16738,
+     "min": [
+      208.003,
+      119.0,
+      0.0
+     ],
+     "max": [
+      224.003,
+      135.0,
+      4.15
+     ],
+     "size": [
+      16.0,
+      16.0,
+      4.15
+     ],
+     "watertight": true,
+     "winding_consistent": true,
+     "volume_mm3": 464.533250459961,
+     "area_mm2": 639.8512051244547,
+     "bodies": 1,
+     "degenerate_faces": 0,
+     "same_orientation_as_original": true,
+     "volume_matches_original": true,
+     "original_plate": "4"
+    },
+    {
+     "name": "plate4_bearing_idle_horn_id85",
+     "verts": 8361,
+     "faces": 16738,
+     "min": [
+      10.009,
+      145.0,
+      0.0
+     ],
+     "max": [
+      26.009,
+      161.0,
+      4.15
+     ],
+     "size": [
+      16.0,
+      16.0,
+      4.15
+     ],
+     "watertight": true,
+     "winding_consistent": true,
+     "volume_mm3": 464.5332504599598,
+     "area_mm2": 639.8512051244546,
+     "bodies": 1,
+     "degenerate_faces": 0,
+     "same_orientation_as_original": true,
+     "volume_matches_original": true,
+     "original_plate": "4"
+    },
+    {
+     "name": "plate4_bearing_rgbn_id62",
+     "verts": 864,
+     "faces": 1728,
+     "min": [
+      30.009,
+      145.0,
+      0.0
+     ],
+     "max": [
+      44.609,
+      159.6,
+      3.0
+     ],
+     "size": [
+      14.6,
+      14.6,
+      3.0
+     ],
+     "watertight": true,
+     "winding_consistent": true,
+     "volume_mm3": 282.8747639999997,
+     "area_mm2": 417.11680877931605,
+     "bodies": 1,
+     "degenerate_faces": 0,
+     "same_orientation_as_original": true,
+     "volume_matches_original": true,
+     "original_plate": "4"
+    },
+    {
+     "name": "plate4_bearing_rgbn_id68",
+     "verts": 864,
+     "faces": 1728,
+     "min": [
+      48.609,
+      145.0,
+      0.0
+     ],
+     "max": [
+      63.209,
+      159.6,
+      3.0
+     ],
+     "size": [
+      14.6,
+      14.6,
+      3.0
+     ],
+     "watertight": true,
+     "winding_consistent": true,
+     "volume_mm3": 282.87476400000014,
+     "area_mm2": 417.116808779316,
+     "bodies": 1,
+     "degenerate_faces": 0,
+     "same_orientation_as_original": true,
+     "volume_matches_original": true,
+     "original_plate": "4"
+    },
+    {
+     "name": "plate4_bearing_idle_cap_id59",
+     "verts": 4033,
+     "faces": 8066,
+     "min": [
+      67.209,
+      145.0,
+      0.0
+     ],
+     "max": [
+      74.009,
+      151.8,
+      4.6
+     ],
+     "size": [
+      6.8,
+      6.8,
+      4.6
+     ],
+     "watertight": true,
+     "winding_consistent": true,
+     "volume_mm3": 65.37652617581303,
+     "area_mm2": 195.7599182400469,
+     "bodies": 1,
+     "degenerate_faces": 0,
+     "same_orientation_as_original": true,
+     "volume_matches_original": true,
+     "original_plate": "4"
+    },
+    {
+     "name": "plate4_bearing_idle_cap_id78",
+     "verts": 4033,
+     "faces": 8066,
+     "min": [
+      78.009,
+      145.0,
+      0.0
+     ],
+     "max": [
+      84.809,
+      151.8,
+      4.6
+     ],
+     "size": [
+      6.8,
+      6.8,
+      4.6
+     ],
+     "watertight": true,
+     "winding_consistent": true,
+     "volume_mm3": 65.37652603794379,
+     "area_mm2": 195.75991886371366,
+     "bodies": 1,
+     "degenerate_faces": 0,
+     "same_orientation_as_original": true,
+     "volume_matches_original": true,
+     "original_plate": "4"
+    },
+    {
+     "name": "plate4_bearing_idle_cap_id80",
+     "verts": 4033,
+     "faces": 8066,
+     "min": [
+      88.809,
+      145.0,
+      0.0
+     ],
+     "max": [
+      95.609,
+      151.8,
+      4.6
+     ],
+     "size": [
+      6.8,
+      6.8,
+      4.6
+     ],
+     "watertight": true,
+     "winding_consistent": true,
+     "volume_mm3": 65.37652603794396,
+     "area_mm2": 195.75991886371366,
+     "bodies": 1,
+     "degenerate_faces": 0,
+     "same_orientation_as_original": true,
+     "volume_matches_original": true,
+     "original_plate": "4"
+    },
+    {
+     "name": "plate4_bearing_idle_cap_id82",
+     "verts": 4033,
+     "faces": 8066,
+     "min": [
+      99.609,
+      145.0,
+      0.0
+     ],
+     "max": [
+      106.409,
+      151.8,
+      4.6
+     ],
+     "size": [
+      6.8,
+      6.8,
+      4.6
+     ],
+     "watertight": true,
+     "winding_consistent": true,
+     "volume_mm3": 65.37652617581286,
+     "area_mm2": 195.7599182400469,
+     "bodies": 1,
+     "degenerate_faces": 0,
+     "same_orientation_as_original": true,
+     "volume_matches_original": true,
+     "original_plate": "4"
+    },
+    {
+     "name": "plate4_bearing_idle_cap_id84",
+     "verts": 4033,
+     "faces": 8066,
+     "min": [
+      110.409,
+      145.0,
+      0.0
+     ],
+     "max": [
+      117.209,
+      151.8,
+      4.6
+     ],
+     "size": [
+      6.8,
+      6.8,
+      4.6
+     ],
+     "watertight": true,
+     "winding_consistent": true,
+     "volume_mm3": 65.37652603794396,
+     "area_mm2": 195.75991886371366,
+     "bodies": 1,
+     "degenerate_faces": 0,
+     "same_orientation_as_original": true,
+     "volume_matches_original": true,
+     "original_plate": "4"
+    },
+    {
+     "name": "plate4_bearing_idle_cap_id86",
+     "verts": 4033,
+     "faces": 8066,
+     "min": [
+      121.209,
+      145.0,
+      0.0
+     ],
+     "max": [
+      128.009,
+      151.8,
+      4.6
+     ],
+     "size": [
+      6.8,
+      6.8,
+      4.6
+     ],
+     "watertight": true,
+     "winding_consistent": true,
+     "volume_mm3": 65.37652603794405,
+     "area_mm2": 195.75991886371366,
+     "bodies": 1,
+     "degenerate_faces": 0,
+     "same_orientation_as_original": true,
+     "volume_matches_original": true,
+     "original_plate": "4"
+    }
+   ]
+  }
+ },
+ "stls": {
+  "NylonG_PulseXE/individual_STL/plate1_foot-housing_grbrgn_id64.stl": {
+   "verts": 2882,
+   "faces": 5788,
+   "min": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "max": [
+    36.5,
+    25.498,
+    39.488
+   ],
+   "size": [
+    36.5,
+    25.498,
+    39.488
+   ],
+   "watertight": true,
+   "winding_consistent": true,
+   "volume_mm3": 6200.6697102301805,
+   "area_mm2": 5541.432649756689,
+   "bodies": 1,
+   "degenerate_faces": 0,
+   "in_plate": "NylonG_PulseXE/N2_legs_feet_1.3mf",
+   "same_as_plate_part": true
+  },
+  "NylonG_PulseXE/individual_STL/plate1_foot-housing_thngthm_id66.stl": {
+   "verts": 2882,
+   "faces": 5788,
+   "min": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "max": [
+    36.5,
+    25.498,
+    39.49
+   ],
+   "size": [
+    36.5,
+    25.498,
+    39.49
+   ],
+   "watertight": true,
+   "winding_consistent": true,
+   "volume_mm3": 6200.592595833284,
+   "area_mm2": 5541.419639281232,
+   "bodies": 1,
+   "degenerate_faces": 0,
+   "in_plate": "NylonG_PulseXE/N2_legs_feet_1.3mf",
+   "same_as_plate_part": true
+  },
+  "NylonG_PulseXE/individual_STL/plate2_leg-link_7_id8.stl": {
+   "verts": 10438,
+   "faces": 20898,
+   "min": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "max": [
+    41.69,
+    80.888,
+    33.714
+   ],
+   "size": [
+    41.69,
+    80.888,
+    33.714
+   ],
+   "watertight": true,
+   "winding_consistent": true,
+   "volume_mm3": 11389.370540037702,
+   "area_mm2": 11541.82006518182,
+   "bodies": 1,
+   "degenerate_faces": 0,
+   "in_plate": "NylonG_PulseXE/N2_legs_feet_1.3mf",
+   "same_as_plate_part": true
+  },
+  "NylonG_PulseXE/individual_STL/plate2_leg-link_8_id10.stl": {
+   "verts": 10438,
+   "faces": 20896,
+   "min": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "max": [
+    42.423,
+    80.55,
+    32.02
+   ],
+   "size": [
+    42.423,
+    80.55,
+    32.02
+   ],
+   "watertight": true,
+   "winding_consistent": true,
+   "volume_mm3": 11216.911706319506,
+   "area_mm2": 11335.798668239608,
+   "bodies": 1,
+   "degenerate_faces": 0,
+   "in_plate": "NylonG_PulseXE/N2_legs_feet_1.3mf",
+   "same_as_plate_part": true
+  },
+  "NylonG_PulseXE/individual_STL/plate3_frame_a_id12.stl": {
+   "verts": 6391,
+   "faces": 12846,
+   "min": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "max": [
+    54.498,
+    83.49,
+    17.0
+   ],
+   "size": [
+    54.498,
+    83.49,
+    17.0
+   ],
+   "watertight": true,
+   "winding_consistent": true,
+   "volume_mm3": 10487.498120139595,
+   "area_mm2": 12649.858515416956,
+   "bodies": 1,
+   "degenerate_faces": 0,
+   "in_plate": "NylonG_PulseXE/N1_frame_1.3mf",
+   "same_as_plate_part": true
+  },
+  "NylonG_PulseXE/individual_STL/plate3_frame_b_id14.stl": {
+   "verts": 10502,
+   "faces": 21038,
+   "min": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "max": [
+    32.45,
+    19.0,
+    34.5
+   ],
+   "size": [
+    32.45,
+    19.0,
+    34.5
+   ],
+   "watertight": true,
+   "winding_consistent": true,
+   "volume_mm3": 4524.959099091818,
+   "area_mm2": 3359.449014807313,
+   "bodies": 1,
+   "degenerate_faces": 0,
+   "in_plate": "NylonG_PulseXE/N1_frame_2.3mf",
+   "same_as_plate_part": true
+  },
+  "NylonG_PulseXE/individual_STL/plate3_frame_b_id60.stl": {
+   "verts": 10502,
+   "faces": 21038,
+   "min": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "max": [
+    32.45,
+    19.0,
+    34.5
+   ],
+   "size": [
+    32.45,
+    19.0,
+    34.5
+   ],
+   "watertight": true,
+   "winding_consistent": true,
+   "volume_mm3": 4524.959099091818,
+   "area_mm2": 3359.449014807313,
+   "bodies": 1,
+   "degenerate_faces": 0,
+   "in_plate": "NylonG_PulseXE/N1_frame_2.3mf",
+   "same_as_plate_part": true
+  },
+  "NylonG_PulseXE/individual_STL/plate3_frame_d_id16.stl": {
+   "verts": 1256,
+   "faces": 2524,
+   "min": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "max": [
+    20.0,
+    11.0,
+    2.0
+   ],
+   "size": [
+    20.0,
+    11.0,
+    2.0
+   ],
+   "watertight": true,
+   "winding_consistent": true,
+   "volume_mm3": 399.8855257178822,
+   "area_mm2": 574.8026200377612,
+   "bodies": 1,
+   "degenerate_faces": 0,
+   "in_plate": "NylonG_PulseXE/N1_frame_2.3mf",
+   "same_as_plate_part": true
+  },
+  "NylonG_PulseXE/individual_STL/plate3_frame_dfbdfbbbbb1_id70.stl": {
+   "verts": 4866,
+   "faces": 9772,
+   "min": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "max": [
+    35.898,
+    34.0,
+    22.5
+   ],
+   "size": [
+    35.898,
+    34.0,
+    22.5
+   ],
+   "watertight": true,
+   "winding_consistent": true,
+   "volume_mm3": 4553.857338795012,
+   "area_mm2": 4724.683011938684,
+   "bodies": 1,
+   "degenerate_faces": 0,
+   "in_plate": "NylonG_PulseXE/N1_frame_2.3mf",
+   "same_as_plate_part": true
+  },
+  "NylonG_PulseXE/individual_STL/plate3_frame_e_id18.stl": {
+   "verts": 1256,
+   "faces": 2524,
+   "min": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "max": [
+    20.0,
+    11.0,
+    2.0
+   ],
+   "size": [
+    20.0,
+    11.0,
+    2.0
+   ],
+   "watertight": true,
+   "winding_consistent": true,
+   "volume_mm3": 399.8855257178822,
+   "area_mm2": 574.8026200377612,
+   "bodies": 1,
+   "degenerate_faces": 0,
+   "in_plate": "NylonG_PulseXE/N1_frame_2.3mf",
+   "same_as_plate_part": true
+  },
+  "NylonG_PulseXE/individual_STL/plate3_frame_f_id20.stl": {
+   "verts": 1784,
+   "faces": 3600,
+   "min": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "max": [
+    58.056,
+    44.996,
+    0.998
+   ],
+   "size": [
+    58.056,
+    44.996,
+    0.998
+   ],
+   "watertight": true,
+   "winding_consistent": true,
+   "volume_mm3": 746.2710246897726,
+   "area_mm2": 1954.4610297720155,
+   "bodies": 1,
+   "degenerate_faces": 0,
+   "in_plate": "NylonG_PulseXE/N1_frame_1.3mf",
+   "same_as_plate_part": true
+  },
+  "NylonG_PulseXE/individual_STL/plate3_frame_g_id22.stl": {
+   "verts": 1784,
+   "faces": 3600,
+   "min": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "max": [
+    58.056,
+    44.996,
+    0.998
+   ],
+   "size": [
+    58.056,
+    44.996,
+    0.998
+   ],
+   "watertight": true,
+   "winding_consistent": true,
+   "volume_mm3": 746.2710262230966,
+   "area_mm2": 1954.4610370777868,
+   "bodies": 1,
+   "degenerate_faces": 0,
+   "in_plate": "NylonG_PulseXE/N1_frame_1.3mf",
+   "same_as_plate_part": true
+  },
+  "NylonG_PulseXE/individual_STL/plate3_frame_ghmghmghmghm_id76.stl": {
+   "verts": 5739,
+   "faces": 11494,
+   "min": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "max": [
+    87.65,
+    44.626,
+    12.498
+   ],
+   "size": [
+    87.65,
+    44.626,
+    12.498
+   ],
+   "watertight": true,
+   "winding_consistent": true,
+   "volume_mm3": 5823.68912411862,
+   "area_mm2": 8399.791739550841,
+   "bodies": 1,
+   "degenerate_faces": 0,
+   "in_plate": "NylonG_PulseXE/N1_frame_2.3mf",
+   "same_as_plate_part": true
+  },
+  "NylonG_PulseXE/individual_STL/plate3_frame_h_id24.stl": {
+   "verts": 1855,
+   "faces": 3726,
+   "min": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "max": [
+    54.2,
+    73.5,
+    18.8
+   ],
+   "size": [
+    54.2,
+    73.5,
+    18.8
+   ],
+   "watertight": true,
+   "winding_consistent": true,
+   "volume_mm3": 7513.950399163846,
+   "area_mm2": 9654.799925334017,
+   "bodies": 1,
+   "degenerate_faces": 0,
+   "in_plate": "NylonG_PulseXE/N1_frame_1.3mf",
+   "same_as_plate_part": true
+  },
+  "NylonG_PulseXE/individual_STL/plate3_frame_i_id26.stl": {
+   "verts": 781,
+   "faces": 1566,
+   "min": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "max": [
+    54.048,
+    6.67,
+    3.802
+   ],
+   "size": [
+    54.048,
+    6.67,
+    3.802
+   ],
+   "watertight": true,
+   "winding_consistent": true,
+   "volume_mm3": 459.6404669682761,
+   "area_mm2": 822.4677809172956,
+   "bodies": 1,
+   "degenerate_faces": 0,
+   "in_plate": "NylonG_PulseXE/N1_frame_2.3mf",
+   "same_as_plate_part": true
+  },
+  "NylonG_PulseXE/individual_STL/plate3_frame_j_id28.stl": {
+   "verts": 6061,
+   "faces": 12158,
+   "min": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "max": [
+    35.0,
+    17.998,
+    27.694
+   ],
+   "size": [
+    35.0,
+    17.998,
+    27.694
+   ],
+   "watertight": true,
+   "winding_consistent": true,
+   "volume_mm3": 4115.87541612236,
+   "area_mm2": 3847.7013523632254,
+   "bodies": 1,
+   "degenerate_faces": 0,
+   "in_plate": "NylonG_PulseXE/N0_test_piece.3mf",
+   "same_as_plate_part": true
+  },
+  "NylonG_PulseXE/individual_STL/plate3_frame_k_id30.stl": {
+   "verts": 7419,
+   "faces": 14866,
+   "min": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "max": [
+    20.0,
+    57.998,
+    7.95
+   ],
+   "size": [
+    20.0,
+    57.998,
+    7.95
+   ],
+   "watertight": true,
+   "winding_consistent": true,
+   "volume_mm3": 3405.573079080645,
+   "area_mm2": 3234.3324623133717,
+   "bodies": 1,
+   "degenerate_faces": 0,
+   "in_plate": "NylonG_PulseXE/N1_frame_1.3mf",
+   "same_as_plate_part": true
+  },
+  "NylonG_PulseXE/individual_STL/plate3_frame_l_id32.stl": {
+   "verts": 7419,
+   "faces": 14866,
+   "min": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "max": [
+    20.002,
+    57.998,
+    7.95
+   ],
+   "size": [
+    20.002,
+    57.998,
+    7.95
+   ],
+   "watertight": true,
+   "winding_consistent": true,
+   "volume_mm3": 3405.659261405188,
+   "area_mm2": 3234.0786466158565,
+   "bodies": 1,
+   "degenerate_faces": 0,
+   "in_plate": "NylonG_PulseXE/N1_frame_1.3mf",
+   "same_as_plate_part": true
+  },
+  "NylonG_PulseXE/individual_STL/plate3_frame_m_id34.stl": {
+   "verts": 1839,
+   "faces": 3702,
+   "min": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "max": [
+    56.998,
+    36.0,
+    3.0
+   ],
+   "size": [
+    56.998,
+    36.0,
+    3.0
+   ],
+   "watertight": true,
+   "winding_consistent": true,
+   "volume_mm3": 1415.0665340899939,
+   "area_mm2": 3197.804078553042,
+   "bodies": 1,
+   "degenerate_faces": 0,
+   "in_plate": "NylonG_PulseXE/N1_frame_2.3mf",
+   "same_as_plate_part": true
+  },
+  "NylonG_PulseXE/individual_STL/plate3_frame_n_id36.stl": {
+   "verts": 6306,
+   "faces": 12644,
+   "min": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "max": [
+    22.998,
+    20.498,
+    25.8
+   ],
+   "size": [
+    22.998,
+    20.498,
+    25.8
+   ],
+   "watertight": true,
+   "winding_consistent": true,
+   "volume_mm3": 2816.0287524997025,
+   "area_mm2": 2858.7224918733045,
+   "bodies": 1,
+   "degenerate_faces": 0,
+   "in_plate": "NylonG_PulseXE/N1_frame_2.3mf",
+   "same_as_plate_part": true
+  },
+  "NylonG_PulseXE/individual_STL/plate3_frame_o_id38.stl": {
+   "verts": 6306,
+   "faces": 12644,
+   "min": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "max": [
+    22.998,
+    20.498,
+    25.8
+   ],
+   "size": [
+    22.998,
+    20.498,
+    25.8
+   ],
+   "watertight": true,
+   "winding_consistent": true,
+   "volume_mm3": 2816.0287524997025,
+   "area_mm2": 2858.7224918733045,
+   "bodies": 1,
+   "degenerate_faces": 0,
+   "in_plate": "NylonG_PulseXE/N1_frame_2.3mf",
+   "same_as_plate_part": true
+  },
+  "NylonG_PulseXE/individual_STL/plate3_frame_p_id40.stl": {
+   "verts": 4950,
+   "faces": 9896,
+   "min": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "max": [
+    87.817,
+    33.319,
+    3.008
+   ],
+   "size": [
+    87.817,
+    33.319,
+    3.008
+   ],
+   "watertight": true,
+   "winding_consistent": true,
+   "volume_mm3": 2700.6052106550883,
+   "area_mm2": 6227.063425197991,
+   "bodies": 1,
+   "degenerate_faces": 0,
+   "in_plate": "NylonG_PulseXE/N1_frame_2.3mf",
+   "same_as_plate_part": true
+  },
+  "NylonG_PulseXE/individual_STL/plate3_frame_q_id42.stl": {
+   "verts": 3971,
+   "faces": 7938,
+   "min": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "max": [
+    87.667,
+    32.882,
+    8.619
+   ],
+   "size": [
+    87.667,
+    32.882,
+    8.619
+   ],
+   "watertight": true,
+   "winding_consistent": true,
+   "volume_mm3": 18600.510292127005,
+   "area_mm2": 6449.390204854306,
+   "bodies": 1,
+   "degenerate_faces": 0,
+   "in_plate": "NylonG_PulseXE/N1_frame_2.3mf",
+   "same_as_plate_part": true
+  },
+  "PLA_Prusa/individual_STL/plate1_beak-jaw_4_id4.stl": {
+   "verts": 14151,
+   "faces": 28322,
+   "min": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "max": [
+    91.413,
+    69.436,
+    29.045
+   ],
+   "size": [
+    91.413,
+    69.436,
+    29.045
+   ],
+   "watertight": true,
+   "winding_consistent": true,
+   "volume_mm3": 9359.72140057805,
+   "area_mm2": 11074.298351506044,
+   "bodies": 1,
+   "degenerate_faces": 0,
+   "in_plate": "PLA_Prusa/P1_shells_beak_1.3mf",
+   "same_as_plate_part": true
+  },
+  "PLA_Prusa/individual_STL/plate1_beak-tray_3_id2.stl": {
+   "verts": 10793,
+   "faces": 21602,
+   "min": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "max": [
+    91.759,
+    117.116,
+    20.061
+   ],
+   "size": [
+    91.759,
+    117.116,
+    20.061
+   ],
+   "watertight": true,
+   "winding_consistent": true,
+   "volume_mm3": 23795.488935431258,
+   "area_mm2": 29133.115630116925,
+   "bodies": 1,
+   "degenerate_faces": 0,
+   "in_plate": "PLA_Prusa/P1_shells_beak_1.3mf",
+   "same_as_plate_part": true
+  },
+  "PLA_Prusa/individual_STL/plate2_big-shell_5_id6.stl": {
+   "verts": 8059,
+   "faces": 16114,
+   "min": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "max": [
+    91.76,
+    61.925,
+    116.073
+   ],
+   "size": [
+    91.76,
+    61.925,
+    116.073
+   ],
+   "watertight": true,
+   "winding_consistent": true,
+   "volume_mm3": 29871.737960213486,
+   "area_mm2": 34531.10957411869,
+   "bodies": 1,
+   "degenerate_faces": 0,
+   "in_plate": "PLA_Prusa/P1_shells_beak_1.3mf",
+   "same_as_plate_part": true
+  },
+  "PLA_Prusa/individual_STL/plate2_cover_fgb_id72.stl": {
+   "verts": 6389,
+   "faces": 12782,
+   "min": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "max": [
+    60.998,
+    47.658,
+    27.998
+   ],
+   "size": [
+    60.998,
+    47.658,
+    27.998
+   ],
+   "watertight": true,
+   "winding_consistent": true,
+   "volume_mm3": 4150.3950147031255,
+   "area_mm2": 8530.89679413465,
+   "bodies": 1,
+   "degenerate_faces": 0,
+   "in_plate": "PLA_Prusa/P1_shells_beak_1.3mf",
+   "same_as_plate_part": true
+  },
+  "PLA_Prusa/individual_STL/plate2_cover_gbgb_id74.stl": {
+   "verts": 6355,
+   "faces": 12714,
+   "min": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "max": [
+    60.998,
+    47.658,
+    27.998
+   ],
+   "size": [
+    60.998,
+    47.658,
+    27.998
+   ],
+   "watertight": true,
+   "winding_consistent": true,
+   "volume_mm3": 4150.017222286559,
+   "area_mm2": 8530.611830230146,
+   "bodies": 1,
+   "degenerate_faces": 0,
+   "in_plate": "PLA_Prusa/P1_shells_beak_1.3mf",
+   "same_as_plate_part": true
+  },
+  "PLA_Prusa/individual_STL/plate4_bearing_dfvdfb_id50.stl": {
+   "verts": 1241,
+   "faces": 2498,
+   "min": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "max": [
+    22.998,
+    40.0,
+    2.998
+   ],
+   "size": [
+    22.998,
+    40.0,
+    2.998
+   ],
+   "watertight": true,
+   "winding_consistent": true,
+   "volume_mm3": 625.1986097524222,
+   "area_mm2": 1461.5611988740225,
+   "bodies": 1,
+   "degenerate_faces": 0,
+   "in_plate": "PLA_Prusa/P3_bearings_horns_1.3mf",
+   "same_as_plate_part": true
+  },
+  "PLA_Prusa/individual_STL/plate4_bearing_dfvdfb_id51.stl": {
+   "verts": 1241,
+   "faces": 2498,
+   "min": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "max": [
+    22.998,
+    40.0,
+    2.998
+   ],
+   "size": [
+    22.998,
+    40.0,
+    2.998
+   ],
+   "watertight": true,
+   "winding_consistent": true,
+   "volume_mm3": 625.1986097524222,
+   "area_mm2": 1461.5611988740225,
+   "bodies": 1,
+   "degenerate_faces": 0,
+   "in_plate": "PLA_Prusa/P3_bearings_horns_1.3mf",
+   "same_as_plate_part": true
+  },
+  "PLA_Prusa/individual_STL/plate4_bearing_ersgtbgertgestrg_id100.stl": {
+   "verts": 5550,
+   "faces": 11100,
+   "min": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "max": [
+    21.998,
+    22.0,
+    4.0
+   ],
+   "size": [
+    21.998,
+    22.0,
+    4.0
+   ],
+   "watertight": true,
+   "winding_consistent": true,
+   "volume_mm3": 664.6719132064613,
+   "area_mm2": 777.9149910215981,
+   "bodies": 1,
+   "degenerate_faces": 0,
+   "in_plate": "PLA_Prusa/P3_bearings_horns_1.3mf",
+   "same_as_plate_part": true
+  },
+  "PLA_Prusa/individual_STL/plate4_bearing_ersgtbgertgestrg_id101.stl": {
+   "verts": 5550,
+   "faces": 11100,
+   "min": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "max": [
+    21.998,
+    22.0,
+    4.0
+   ],
+   "size": [
+    21.998,
+    22.0,
+    4.0
+   ],
+   "watertight": true,
+   "winding_consistent": true,
+   "volume_mm3": 664.6719132064613,
+   "area_mm2": 777.9149910215981,
+   "bodies": 1,
+   "degenerate_faces": 0,
+   "in_plate": "PLA_Prusa/P3_bearings_horns_1.3mf",
+   "same_as_plate_part": true
+  },
+  "PLA_Prusa/individual_STL/plate4_bearing_ersgtbgertgestrg_id102.stl": {
+   "verts": 5550,
+   "faces": 11100,
+   "min": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "max": [
+    21.998,
+    22.0,
+    4.0
+   ],
+   "size": [
+    21.998,
+    22.0,
+    4.0
+   ],
+   "watertight": true,
+   "winding_consistent": true,
+   "volume_mm3": 664.6719132064613,
+   "area_mm2": 777.9149910215981,
+   "bodies": 1,
+   "degenerate_faces": 0,
+   "in_plate": "PLA_Prusa/P3_bearings_horns_1.3mf",
+   "same_as_plate_part": true
+  },
+  "PLA_Prusa/individual_STL/plate4_bearing_ersgtbgertgestrg_id103.stl": {
+   "verts": 5550,
+   "faces": 11100,
+   "min": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "max": [
+    21.998,
+    22.0,
+    4.0
+   ],
+   "size": [
+    21.998,
+    22.0,
+    4.0
+   ],
+   "watertight": true,
+   "winding_consistent": true,
+   "volume_mm3": 664.6719132064613,
+   "area_mm2": 777.9149910215981,
+   "bodies": 1,
+   "degenerate_faces": 0,
+   "in_plate": "PLA_Prusa/P3_bearings_horns_1.3mf",
+   "same_as_plate_part": true
+  },
+  "PLA_Prusa/individual_STL/plate4_bearing_ersgtbgertgestrg_id53.stl": {
+   "verts": 5550,
+   "faces": 11100,
+   "min": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "max": [
+    21.998,
+    22.0,
+    4.0
+   ],
+   "size": [
+    21.998,
+    22.0,
+    4.0
+   ],
+   "watertight": true,
+   "winding_consistent": true,
+   "volume_mm3": 664.6719132064613,
+   "area_mm2": 777.9149910215981,
+   "bodies": 1,
+   "degenerate_faces": 0,
+   "in_plate": "PLA_Prusa/P3_bearings_horns_1.3mf",
+   "same_as_plate_part": true
+  },
+  "PLA_Prusa/individual_STL/plate4_bearing_ersgtbgertgestrg_id87.stl": {
+   "verts": 5550,
+   "faces": 11100,
+   "min": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "max": [
+    21.998,
+    22.0,
+    4.0
+   ],
+   "size": [
+    21.998,
+    22.0,
+    4.0
+   ],
+   "watertight": true,
+   "winding_consistent": true,
+   "volume_mm3": 664.6719132064613,
+   "area_mm2": 777.9149910215981,
+   "bodies": 1,
+   "degenerate_faces": 0,
+   "in_plate": "PLA_Prusa/P3_bearings_horns_1.3mf",
+   "same_as_plate_part": true
+  },
+  "PLA_Prusa/individual_STL/plate4_bearing_ersgtbgertgestrg_id88.stl": {
+   "verts": 5550,
+   "faces": 11100,
+   "min": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "max": [
+    21.998,
+    22.0,
+    4.0
+   ],
+   "size": [
+    21.998,
+    22.0,
+    4.0
+   ],
+   "watertight": true,
+   "winding_consistent": true,
+   "volume_mm3": 664.6719132064613,
+   "area_mm2": 777.9149910215981,
+   "bodies": 1,
+   "degenerate_faces": 0,
+   "in_plate": "PLA_Prusa/P3_bearings_horns_1.3mf",
+   "same_as_plate_part": true
+  },
+  "PLA_Prusa/individual_STL/plate4_bearing_ersgtbgertgestrg_id89.stl": {
+   "verts": 5550,
+   "faces": 11100,
+   "min": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "max": [
+    21.998,
+    22.0,
+    4.0
+   ],
+   "size": [
+    21.998,
+    22.0,
+    4.0
+   ],
+   "watertight": true,
+   "winding_consistent": true,
+   "volume_mm3": 664.6719132064613,
+   "area_mm2": 777.9149910215981,
+   "bodies": 1,
+   "degenerate_faces": 0,
+   "in_plate": "PLA_Prusa/P3_bearings_horns_1.3mf",
+   "same_as_plate_part": true
+  },
+  "PLA_Prusa/individual_STL/plate4_bearing_ersgtbgertgestrg_id90.stl": {
+   "verts": 5550,
+   "faces": 11100,
+   "min": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "max": [
+    21.998,
+    22.0,
+    4.0
+   ],
+   "size": [
+    21.998,
+    22.0,
+    4.0
+   ],
+   "watertight": true,
+   "winding_consistent": true,
+   "volume_mm3": 664.6719132064613,
+   "area_mm2": 777.9149910215981,
+   "bodies": 1,
+   "degenerate_faces": 0,
+   "in_plate": "PLA_Prusa/P3_bearings_horns_1.3mf",
+   "same_as_plate_part": true
+  },
+  "PLA_Prusa/individual_STL/plate4_bearing_ersgtbgertgestrg_id91.stl": {
+   "verts": 5550,
+   "faces": 11100,
+   "min": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "max": [
+    21.998,
+    22.0,
+    4.0
+   ],
+   "size": [
+    21.998,
+    22.0,
+    4.0
+   ],
+   "watertight": true,
+   "winding_consistent": true,
+   "volume_mm3": 664.6719132064613,
+   "area_mm2": 777.9149910215981,
+   "bodies": 1,
+   "degenerate_faces": 0,
+   "in_plate": "PLA_Prusa/P3_bearings_horns_1.3mf",
+   "same_as_plate_part": true
+  },
+  "PLA_Prusa/individual_STL/plate4_bearing_ersgtbgertgestrg_id92.stl": {
+   "verts": 5550,
+   "faces": 11100,
+   "min": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "max": [
+    21.998,
+    22.0,
+    4.0
+   ],
+   "size": [
+    21.998,
+    22.0,
+    4.0
+   ],
+   "watertight": true,
+   "winding_consistent": true,
+   "volume_mm3": 664.6719132064613,
+   "area_mm2": 777.9149910215981,
+   "bodies": 1,
+   "degenerate_faces": 0,
+   "in_plate": "PLA_Prusa/P3_bearings_horns_1.3mf",
+   "same_as_plate_part": true
+  },
+  "PLA_Prusa/individual_STL/plate4_bearing_ersgtbgertgestrg_id93.stl": {
+   "verts": 5550,
+   "faces": 11100,
+   "min": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "max": [
+    21.998,
+    22.0,
+    4.0
+   ],
+   "size": [
+    21.998,
+    22.0,
+    4.0
+   ],
+   "watertight": true,
+   "winding_consistent": true,
+   "volume_mm3": 664.6719132064613,
+   "area_mm2": 777.9149910215981,
+   "bodies": 1,
+   "degenerate_faces": 0,
+   "in_plate": "PLA_Prusa/P3_bearings_horns_1.3mf",
+   "same_as_plate_part": true
+  },
+  "PLA_Prusa/individual_STL/plate4_bearing_ersgtbgertgestrg_id94.stl": {
+   "verts": 5550,
+   "faces": 11100,
+   "min": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "max": [
+    21.998,
+    22.0,
+    4.0
+   ],
+   "size": [
+    21.998,
+    22.0,
+    4.0
+   ],
+   "watertight": true,
+   "winding_consistent": true,
+   "volume_mm3": 664.6719132064613,
+   "area_mm2": 777.9149910215981,
+   "bodies": 1,
+   "degenerate_faces": 0,
+   "in_plate": "PLA_Prusa/P3_bearings_horns_1.3mf",
+   "same_as_plate_part": true
+  },
+  "PLA_Prusa/individual_STL/plate4_bearing_ersgtbgertgestrg_id95.stl": {
+   "verts": 5550,
+   "faces": 11100,
+   "min": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "max": [
+    21.998,
+    22.0,
+    4.0
+   ],
+   "size": [
+    21.998,
+    22.0,
+    4.0
+   ],
+   "watertight": true,
+   "winding_consistent": true,
+   "volume_mm3": 664.6719132064613,
+   "area_mm2": 777.9149910215981,
+   "bodies": 1,
+   "degenerate_faces": 0,
+   "in_plate": "PLA_Prusa/P3_bearings_horns_1.3mf",
+   "same_as_plate_part": true
+  },
+  "PLA_Prusa/individual_STL/plate4_bearing_ersgtbgertgestrg_id96.stl": {
+   "verts": 5550,
+   "faces": 11100,
+   "min": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "max": [
+    21.998,
+    22.0,
+    4.0
+   ],
+   "size": [
+    21.998,
+    22.0,
+    4.0
+   ],
+   "watertight": true,
+   "winding_consistent": true,
+   "volume_mm3": 664.6719132064613,
+   "area_mm2": 777.9149910215981,
+   "bodies": 1,
+   "degenerate_faces": 0,
+   "in_plate": "PLA_Prusa/P3_bearings_horns_1.3mf",
+   "same_as_plate_part": true
+  },
+  "PLA_Prusa/individual_STL/plate4_bearing_ersgtbgertgestrg_id97.stl": {
+   "verts": 5550,
+   "faces": 11100,
+   "min": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "max": [
+    21.998,
+    22.0,
+    4.0
+   ],
+   "size": [
+    21.998,
+    22.0,
+    4.0
+   ],
+   "watertight": true,
+   "winding_consistent": true,
+   "volume_mm3": 664.6719132064613,
+   "area_mm2": 777.9149910215981,
+   "bodies": 1,
+   "degenerate_faces": 0,
+   "in_plate": "PLA_Prusa/P3_bearings_horns_1.3mf",
+   "same_as_plate_part": true
+  },
+  "PLA_Prusa/individual_STL/plate4_bearing_ersgtbgertgestrg_id98.stl": {
+   "verts": 5550,
+   "faces": 11100,
+   "min": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "max": [
+    21.998,
+    22.0,
+    4.0
+   ],
+   "size": [
+    21.998,
+    22.0,
+    4.0
+   ],
+   "watertight": true,
+   "winding_consistent": true,
+   "volume_mm3": 664.6719132064613,
+   "area_mm2": 777.9149910215981,
+   "bodies": 1,
+   "degenerate_faces": 0,
+   "in_plate": "PLA_Prusa/P3_bearings_horns_1.3mf",
+   "same_as_plate_part": true
+  },
+  "PLA_Prusa/individual_STL/plate4_bearing_ersgtbgertgestrg_id99.stl": {
+   "verts": 5550,
+   "faces": 11100,
+   "min": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "max": [
+    21.998,
+    22.0,
+    4.0
+   ],
+   "size": [
+    21.998,
+    22.0,
+    4.0
+   ],
+   "watertight": true,
+   "winding_consistent": true,
+   "volume_mm3": 664.6719132064613,
+   "area_mm2": 777.9149910215981,
+   "bodies": 1,
+   "degenerate_faces": 0,
+   "in_plate": "PLA_Prusa/P3_bearings_horns_1.3mf",
+   "same_as_plate_part": true
+  },
+  "PLA_Prusa/individual_STL/plate4_bearing_idle_cap_id59.stl": {
+   "verts": 4033,
+   "faces": 8066,
+   "min": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "max": [
+    6.8,
+    6.8,
+    4.6
+   ],
+   "size": [
+    6.8,
+    6.8,
+    4.6
+   ],
+   "watertight": true,
+   "winding_consistent": true,
+   "volume_mm3": 65.37632707146763,
+   "area_mm2": 195.76023306872455,
+   "bodies": 1,
+   "degenerate_faces": 0,
+   "in_plate": "PLA_Prusa/P3_bearings_horns_1.3mf",
+   "same_as_plate_part": true
+  },
+  "PLA_Prusa/individual_STL/plate4_bearing_idle_cap_id78.stl": {
+   "verts": 4033,
+   "faces": 8066,
+   "min": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "max": [
+    6.8,
+    6.8,
+    4.6
+   ],
+   "size": [
+    6.8,
+    6.8,
+    4.6
+   ],
+   "watertight": true,
+   "winding_consistent": true,
+   "volume_mm3": 65.37632707146763,
+   "area_mm2": 195.76023306872455,
+   "bodies": 1,
+   "degenerate_faces": 0,
+   "in_plate": "PLA_Prusa/P3_bearings_horns_1.3mf",
+   "same_as_plate_part": true
+  },
+  "PLA_Prusa/individual_STL/plate4_bearing_idle_cap_id80.stl": {
+   "verts": 4033,
+   "faces": 8066,
+   "min": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "max": [
+    6.8,
+    6.8,
+    4.6
+   ],
+   "size": [
+    6.8,
+    6.8,
+    4.6
+   ],
+   "watertight": true,
+   "winding_consistent": true,
+   "volume_mm3": 65.37632707146763,
+   "area_mm2": 195.76023306872455,
+   "bodies": 1,
+   "degenerate_faces": 0,
+   "in_plate": "PLA_Prusa/P3_bearings_horns_1.3mf",
+   "same_as_plate_part": true
+  },
+  "PLA_Prusa/individual_STL/plate4_bearing_idle_cap_id82.stl": {
+   "verts": 4033,
+   "faces": 8066,
+   "min": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "max": [
+    6.8,
+    6.8,
+    4.6
+   ],
+   "size": [
+    6.8,
+    6.8,
+    4.6
+   ],
+   "watertight": true,
+   "winding_consistent": true,
+   "volume_mm3": 65.37632707146763,
+   "area_mm2": 195.76023306872455,
+   "bodies": 1,
+   "degenerate_faces": 0,
+   "in_plate": "PLA_Prusa/P3_bearings_horns_1.3mf",
+   "same_as_plate_part": true
+  },
+  "PLA_Prusa/individual_STL/plate4_bearing_idle_cap_id84.stl": {
+   "verts": 4033,
+   "faces": 8066,
+   "min": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "max": [
+    6.8,
+    6.8,
+    4.6
+   ],
+   "size": [
+    6.8,
+    6.8,
+    4.6
+   ],
+   "watertight": true,
+   "winding_consistent": true,
+   "volume_mm3": 65.37632707146763,
+   "area_mm2": 195.76023306872455,
+   "bodies": 1,
+   "degenerate_faces": 0,
+   "in_plate": "PLA_Prusa/P3_bearings_horns_1.3mf",
+   "same_as_plate_part": true
+  },
+  "PLA_Prusa/individual_STL/plate4_bearing_idle_cap_id86.stl": {
+   "verts": 4033,
+   "faces": 8066,
+   "min": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "max": [
+    6.8,
+    6.8,
+    4.6
+   ],
+   "size": [
+    6.8,
+    6.8,
+    4.6
+   ],
+   "watertight": true,
+   "winding_consistent": true,
+   "volume_mm3": 65.37632707146763,
+   "area_mm2": 195.76023306872455,
+   "bodies": 1,
+   "degenerate_faces": 0,
+   "in_plate": "PLA_Prusa/P3_bearings_horns_1.3mf",
+   "same_as_plate_part": true
+  },
+  "PLA_Prusa/individual_STL/plate4_bearing_idle_horn_id57.stl": {
+   "verts": 8361,
+   "faces": 16738,
+   "min": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "max": [
+    16.0,
+    16.0,
+    4.15
+   ],
+   "size": [
+    16.0,
+    16.0,
+    4.15
+   ],
+   "watertight": true,
+   "winding_consistent": true,
+   "volume_mm3": 464.5321555366015,
+   "area_mm2": 639.8505440975596,
+   "bodies": 1,
+   "degenerate_faces": 0,
+   "in_plate": "PLA_Prusa/P3_bearings_horns_1.3mf",
+   "same_as_plate_part": true
+  },
+  "PLA_Prusa/individual_STL/plate4_bearing_idle_horn_id77.stl": {
+   "verts": 8361,
+   "faces": 16738,
+   "min": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "max": [
+    16.0,
+    16.0,
+    4.15
+   ],
+   "size": [
+    16.0,
+    16.0,
+    4.15
+   ],
+   "watertight": true,
+   "winding_consistent": true,
+   "volume_mm3": 464.5321555366015,
+   "area_mm2": 639.8505440975596,
+   "bodies": 1,
+   "degenerate_faces": 0,
+   "in_plate": "PLA_Prusa/P3_bearings_horns_1.3mf",
+   "same_as_plate_part": true
+  },
+  "PLA_Prusa/individual_STL/plate4_bearing_idle_horn_id79.stl": {
+   "verts": 8361,
+   "faces": 16738,
+   "min": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "max": [
+    16.0,
+    16.0,
+    4.15
+   ],
+   "size": [
+    16.0,
+    16.0,
+    4.15
+   ],
+   "watertight": true,
+   "winding_consistent": true,
+   "volume_mm3": 464.5321555366015,
+   "area_mm2": 639.8505440975596,
+   "bodies": 1,
+   "degenerate_faces": 0,
+   "in_plate": "PLA_Prusa/P3_bearings_horns_1.3mf",
+   "same_as_plate_part": true
+  },
+  "PLA_Prusa/individual_STL/plate4_bearing_idle_horn_id81.stl": {
+   "verts": 8361,
+   "faces": 16738,
+   "min": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "max": [
+    16.0,
+    16.0,
+    4.15
+   ],
+   "size": [
+    16.0,
+    16.0,
+    4.15
+   ],
+   "watertight": true,
+   "winding_consistent": true,
+   "volume_mm3": 464.5321555366015,
+   "area_mm2": 639.8505440975596,
+   "bodies": 1,
+   "degenerate_faces": 0,
+   "in_plate": "PLA_Prusa/P3_bearings_horns_1.3mf",
+   "same_as_plate_part": true
+  },
+  "PLA_Prusa/individual_STL/plate4_bearing_idle_horn_id83.stl": {
+   "verts": 8361,
+   "faces": 16738,
+   "min": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "max": [
+    16.0,
+    16.0,
+    4.15
+   ],
+   "size": [
+    16.0,
+    16.0,
+    4.15
+   ],
+   "watertight": true,
+   "winding_consistent": true,
+   "volume_mm3": 464.5321555366015,
+   "area_mm2": 639.8505440975596,
+   "bodies": 1,
+   "degenerate_faces": 0,
+   "in_plate": "PLA_Prusa/P3_bearings_horns_1.3mf",
+   "same_as_plate_part": true
+  },
+  "PLA_Prusa/individual_STL/plate4_bearing_idle_horn_id85.stl": {
+   "verts": 8361,
+   "faces": 16738,
+   "min": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "max": [
+    16.0,
+    16.0,
+    4.15
+   ],
+   "size": [
+    16.0,
+    16.0,
+    4.15
+   ],
+   "watertight": true,
+   "winding_consistent": true,
+   "volume_mm3": 464.5321555366015,
+   "area_mm2": 639.8505440975596,
+   "bodies": 1,
+   "degenerate_faces": 0,
+   "in_plate": "PLA_Prusa/P3_bearings_horns_1.3mf",
+   "same_as_plate_part": true
+  },
+  "PLA_Prusa/individual_STL/plate4_bearing_rgbn_id62.stl": {
+   "verts": 864,
+   "faces": 1728,
+   "min": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "max": [
+    14.6,
+    14.6,
+    3.0
+   ],
+   "size": [
+    14.6,
+    14.6,
+    3.0
+   ],
+   "watertight": true,
+   "winding_consistent": true,
+   "volume_mm3": 282.8747533928047,
+   "area_mm2": 417.11679955103125,
+   "bodies": 1,
+   "degenerate_faces": 0,
+   "in_plate": "PLA_Prusa/P3_bearings_horns_1.3mf",
+   "same_as_plate_part": true
+  },
+  "PLA_Prusa/individual_STL/plate4_bearing_rgbn_id68.stl": {
+   "verts": 864,
+   "faces": 1728,
+   "min": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "max": [
+    14.6,
+    14.6,
+    3.0
+   ],
+   "size": [
+    14.6,
+    14.6,
+    3.0
+   ],
+   "watertight": true,
+   "winding_consistent": true,
+   "volume_mm3": 282.8747533928047,
+   "area_mm2": 417.11679955103125,
+   "bodies": 1,
+   "degenerate_faces": 0,
+   "in_plate": "PLA_Prusa/P3_bearings_horns_1.3mf",
+   "same_as_plate_part": true
+  },
+  "PLA_Prusa/individual_STL/plate5_ring_333_id48.stl": {
+   "verts": 498,
+   "faces": 996,
+   "min": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "max": [
+    30.0,
+    30.0,
+    9.5
+   ],
+   "size": [
+    30.0,
+    30.0,
+    9.5
+   ],
+   "watertight": true,
+   "winding_consistent": true,
+   "volume_mm3": 4251.302098887657,
+   "area_mm2": 2164.000492904496,
+   "bodies": 1,
+   "degenerate_faces": 0,
+   "in_plate": "PLA_Prusa/P2_soles_ring_1.3mf",
+   "same_as_plate_part": true
+  },
+  "PLA_Prusa/individual_STL/plate5_sole_111_id44.stl": {
+   "verts": 22719,
+   "faces": 46258,
+   "min": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "max": [
+    54.01,
+    41.203,
+    18.363
+   ],
+   "size": [
+    54.01,
+    41.203,
+    18.363
+   ],
+   "watertight": true,
+   "winding_consistent": true,
+   "volume_mm3": 18427.019117668366,
+   "area_mm2": 16043.024869767598,
+   "bodies": 1,
+   "degenerate_faces": 0,
+   "in_plate": "PLA_Prusa/P2_soles_ring_1.3mf",
+   "same_as_plate_part": true
+  },
+  "PLA_Prusa/individual_STL/plate5_sole_222_id46.stl": {
+   "verts": 22461,
+   "faces": 45648,
+   "min": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "max": [
+    54.026,
+    41.219,
+    18.382
+   ],
+   "size": [
+    54.026,
+    41.219,
+    18.382
+   ],
+   "watertight": true,
+   "winding_consistent": true,
+   "volume_mm3": 18427.4736900057,
+   "area_mm2": 16056.625313262422,
+   "bodies": 1,
+   "degenerate_faces": 0,
+   "in_plate": "PLA_Prusa/P2_soles_ring_1.3mf",
+   "same_as_plate_part": true
+  },
+  "PLA_Prusa/individual_STL/plateX_spare-horn_idle_horn_id55.stl": {
+   "verts": 8361,
+   "faces": 16738,
+   "min": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "max": [
+    16.0,
+    16.0,
+    4.15
+   ],
+   "size": [
+    16.0,
+    16.0,
+    4.15
+   ],
+   "watertight": true,
+   "winding_consistent": true,
+   "volume_mm3": 464.5321555366015,
+   "area_mm2": 639.8505440975596,
+   "bodies": 1,
+   "degenerate_faces": 0,
+   "in_plate": "PLA_Prusa/P3_bearings_horns_1.3mf",
+   "same_as_plate_part": true
+  },
+  "PLA_Prusa/individual_STL/plateX_spare-horn_idle_horn_id56.stl": {
+   "verts": 8361,
+   "faces": 16738,
+   "min": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "max": [
+    16.0,
+    16.0,
+    4.15
+   ],
+   "size": [
+    16.0,
+    16.0,
+    4.15
+   ],
+   "watertight": true,
+   "winding_consistent": true,
+   "volume_mm3": 464.5321555366015,
+   "area_mm2": 639.8505440975596,
+   "bodies": 1,
+   "degenerate_faces": 0,
+   "in_plate": "PLA_Prusa/P3_bearings_horns_1.3mf",
+   "same_as_plate_part": true
+  }
+ },
+ "issues": [],
+ "totals": {
+  "nylon_parts": 23,
+  "pla_parts": 44,
+  "sum": 67,
+  "original": 67,
+  "duplicate_ids": {},
+  "missing_ids": [],
+  "extra_ids": [],
+  "stl_count": 67,
+  "identical_copy_groups": {
+   "plate3_frame_n_id36": 2,
+   "plate3_frame_b_id14": 2,
+   "plate3_frame_d_id16": 2,
+   "plate4_bearing_dfvdfb_id50": 2,
+   "plate4_bearing_ersgtbgertgestrg_id95": 18,
+   "plate4_bearing_idle_horn_id81": 8,
+   "plate4_bearing_rgbn_id62": 2,
+   "plate4_bearing_idle_cap_id59": 6
+  }
+ },
+ "toplevel_copies": {
+  "N0_test_piece.3mf": true,
+  "plate3_frame_j_id28.stl": true
+ }
+}

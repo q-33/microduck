@@ -1,0 +1,8 @@
+.DS_Store
+.remember/
+__pycache__/
+*.pyc
+.venv/
+external/
+out/
+print/source_split/

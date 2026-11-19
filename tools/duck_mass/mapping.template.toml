@@ -1,0 +1,199 @@
+# duck_mass mapping TEMPLATE (generated; copy to mapping.toml and edit the copy)
+# model: external/microduck_rl/src/mjlab_microduck/robot/microduck/robot_walk.xml
+# parts: print/parts.csv
+# model total mass: 737.243 g over 15 bodies
+#
+# For each body you want to update:
+#   parts         = printed part files (from parts.csv) bolted to this body.
+#                   Move each name out of [unassigned] at the bottom; a part may
+#                   appear only once in the whole file.
+#   non_printed_g = grams of everything else on the body (servos, bearings,
+#                   screws, PCBs, cables). Weigh it or look it up. Or write
+#                   "derive" to use: current body mass - PLA estimate of the
+#                   listed parts. That is an ESTIMATE and the report says so.
+# A body with no non_printed_g is left exactly as in the model.
+# The 'meshes' comment lists what the model's CAD puts in each body. The
+# replica's printed parts may not match the model's CAD one-to-one.
+
+[bodies.trunk_base]
+# current mass in model: 199.224 g
+# meshes: seeed_bearing__configuration__22x16x4, right_shell, banana_pcb_locker, trunk_base, xl330, power_support, np_f970, left_shell
+# xl330 servo mesh instances in this body: 2
+parts = []
+# non_printed_g = 
+
+[bodies.yaw2roll]
+# current mass in model: 23.041 g
+# meshes: yaw2roll, xl330, seeed_bearing__configuration__22x16x4, bearing_roll
+# xl330 servo mesh instances in this body: 1
+parts = []
+# non_printed_g = 
+
+[bodies.hip_l]
+# current mass in model: 6.189 g
+# meshes: seeed_bearing__configuration__22x16x4, hip_l
+# xl330 servo mesh instances in this body: 0
+parts = []
+# non_printed_g = 
+
+[bodies.upper_leg_left]
+# current mass in model: 48.207 g
+# meshes: upper_leg_left, xl330, upper_leg_rigidity_plate, seeed_bearing__configuration__22x16x4
+# xl330 servo mesh instances in this body: 2
+parts = []
+# non_printed_g = 
+
+[bodies.leg]
+# current mass in model: 21.584 g
+# meshes: leg, xl330
+# xl330 servo mesh instances in this body: 1
+parts = []
+# non_printed_g = 
+
+[bodies.ankle_left]
+# current mass in model: 30.025 g
+# meshes: sole_left, foot_left, seeed_bearing__configuration_default, ankle_left
+# xl330 servo mesh instances in this body: 0
+# GUESS, NOT FACT (body has meshes sole_left, foot_left; part labels are guesses too):
+#   maybe plate5_sole_111_id44.stl or plate5_sole_222_id46.stl
+#   maybe plate1_foot-housing_grbrgn_id64.stl or plate1_foot-housing_thngthm_id66.stl
+parts = []
+# non_printed_g = 
+
+[bodies.neck]
+# current mass in model: 36.841 g
+# meshes: neck, xl330
+# xl330 servo mesh instances in this body: 2
+parts = []
+# non_printed_g = 
+
+[bodies.neck_pitch]
+# current mass in model: 5.720 g
+# meshes: neck_pitch, seeed_bearing__configuration__22x16x4
+# xl330 servo mesh instances in this body: 0
+parts = []
+# non_printed_g = 
+
+[bodies.yaw_roll_motion]
+# current mass in model: 48.600 g
+# meshes: yaw_roll_motion, xl330, seeed_bearing__configuration__22x16x4
+# xl330 servo mesh instances in this body: 1
+parts = []
+# non_printed_g = 
+
+[bodies.jaw_soft]
+# current mass in model: 188.766 g
+# meshes: lens, face_part, xl330, jaw_soft, motor_support, top_head_shell, seeed_bearing__configuration_default, elec_rpi_robot_hat_pcb, soft_mouth_top, noenoeil, jaw, bottom_head_shell, m12_lens_holder, pcb__raspberry_pi_zero_2_w, speaker
+# xl330 servo mesh instances in this body: 2
+parts = []
+# non_printed_g = 
+
+[bodies.bearing_roll]
+# current mass in model: 23.041 g
+# meshes: yaw2roll, xl330, bearing_roll, seeed_bearing__configuration__22x16x4
+# xl330 servo mesh instances in this body: 1
+parts = []
+# non_printed_g = 
+
+[bodies.hip_l_2]
+# current mass in model: 6.189 g
+# meshes: hip_l, seeed_bearing__configuration__22x16x4
+# xl330 servo mesh instances in this body: 0
+parts = []
+# non_printed_g = 
+
+[bodies.upper_leg_right]
+# current mass in model: 48.207 g
+# meshes: xl330, seeed_bearing__configuration__22x16x4, upper_leg_rigidity_plate, upper_leg_right
+# xl330 servo mesh instances in this body: 2
+parts = []
+# non_printed_g = 
+
+[bodies.leg_2]
+# current mass in model: 21.584 g
+# meshes: xl330, leg
+# xl330 servo mesh instances in this body: 1
+parts = []
+# non_printed_g = 
+
+[bodies.ankle_right]
+# current mass in model: 30.025 g
+# meshes: ankle_right, sole_right, seeed_bearing__configuration_default, foot_right
+# xl330 servo mesh instances in this body: 0
+# GUESS, NOT FACT (body has meshes sole_right, foot_right; part labels are guesses too):
+#   maybe the other sole
+#   maybe the other foot-housing
+parts = []
+# non_printed_g = 
+
+[unassigned]
+# every printed part starts here; move names into a body's parts list.
+parts = [
+  "plate3_frame_j_id28.stl",  # frame, PETG est 4.08 g
+  "plate3_frame_a_id12.stl",  # frame, PETG est 13.17 g
+  "plate3_frame_f_id20.stl",  # frame, PETG est 0.95 g
+  "plate3_frame_g_id22.stl",  # frame, PETG est 0.95 g
+  "plate3_frame_h_id24.stl",  # frame, PETG est 9.54 g
+  "plate3_frame_k_id30.stl",  # frame, PETG est 3.44 g
+  "plate3_frame_l_id32.stl",  # frame, PETG est 3.44 g
+  "plate3_frame_b_id14.stl",  # frame, PETG est 3.76 g
+  "plate3_frame_b_id60.stl",  # frame, PETG est 3.76 g
+  "plate3_frame_d_id16.stl",  # frame, PETG est 0.51 g
+  "plate3_frame_dfbdfbbbbb1_id70.stl",  # frame, PETG est 4.94 g
+  "plate3_frame_e_id18.stl",  # frame, PETG est 0.51 g
+  "plate3_frame_ghmghmghmghm_id76.stl",  # frame, PETG est 7.4 g
+  "plate3_frame_i_id26.stl",  # frame, PETG est 0.58 g
+  "plate3_frame_m_id34.stl",  # frame, PETG est 1.8 g
+  "plate3_frame_n_id36.stl",  # frame, PETG est 3.05 g
+  "plate3_frame_o_id38.stl",  # frame, PETG est 3.05 g
+  "plate3_frame_p_id40.stl",  # frame, PETG est 3.43 g
+  "plate3_frame_q_id42.stl",  # frame, PETG est 9.12 g
+  "plate1_foot-housing_grbrgn_id64.stl",  # foot-housing, PETG est 6.12 g
+  "plate1_foot-housing_thngthm_id66.stl",  # foot-housing, PETG est 6.13 g
+  "plate2_leg-link_7_id8.stl",  # leg-link, PETG est 12.17 g
+  "plate2_leg-link_8_id10.stl",  # leg-link, PETG est 11.96 g
+  "plate4_bearing_dfvdfb_id50.stl",  # bearing, PETG est 0.79 g
+  "plate4_bearing_dfvdfb_id51.stl",  # bearing, PETG est 0.79 g
+  "plate4_bearing_ersgtbgertgestrg_id100.stl",  # bearing, PETG est 0.8 g
+  "plate4_bearing_ersgtbgertgestrg_id101.stl",  # bearing, PETG est 0.8 g
+  "plate4_bearing_ersgtbgertgestrg_id102.stl",  # bearing, PETG est 0.8 g
+  "plate4_bearing_ersgtbgertgestrg_id103.stl",  # bearing, PETG est 0.8 g
+  "plate4_bearing_ersgtbgertgestrg_id53.stl",  # bearing, PETG est 0.8 g
+  "plate4_bearing_ersgtbgertgestrg_id87.stl",  # bearing, PETG est 0.8 g
+  "plate4_bearing_ersgtbgertgestrg_id88.stl",  # bearing, PETG est 0.8 g
+  "plate4_bearing_ersgtbgertgestrg_id89.stl",  # bearing, PETG est 0.8 g
+  "plate4_bearing_ersgtbgertgestrg_id90.stl",  # bearing, PETG est 0.8 g
+  "plate4_bearing_ersgtbgertgestrg_id91.stl",  # bearing, PETG est 0.8 g
+  "plate4_bearing_ersgtbgertgestrg_id92.stl",  # bearing, PETG est 0.8 g
+  "plate4_bearing_ersgtbgertgestrg_id93.stl",  # bearing, PETG est 0.8 g
+  "plate4_bearing_ersgtbgertgestrg_id94.stl",  # bearing, PETG est 0.8 g
+  "plate4_bearing_ersgtbgertgestrg_id95.stl",  # bearing, PETG est 0.8 g
+  "plate4_bearing_ersgtbgertgestrg_id96.stl",  # bearing, PETG est 0.8 g
+  "plate4_bearing_ersgtbgertgestrg_id97.stl",  # bearing, PETG est 0.8 g
+  "plate4_bearing_ersgtbgertgestrg_id98.stl",  # bearing, PETG est 0.8 g
+  "plate4_bearing_ersgtbgertgestrg_id99.stl",  # bearing, PETG est 0.8 g
+  "plate4_bearing_idle_cap_id59.stl",  # bearing, PETG est 0.08 g
+  "plate4_bearing_idle_cap_id78.stl",  # bearing, PETG est 0.08 g
+  "plate4_bearing_idle_cap_id80.stl",  # bearing, PETG est 0.08 g
+  "plate4_bearing_idle_cap_id82.stl",  # bearing, PETG est 0.08 g
+  "plate4_bearing_idle_cap_id84.stl",  # bearing, PETG est 0.08 g
+  "plate4_bearing_idle_cap_id86.stl",  # bearing, PETG est 0.08 g
+  "plate4_bearing_idle_horn_id57.stl",  # bearing, PETG est 0.59 g
+  "plate4_bearing_idle_horn_id77.stl",  # bearing, PETG est 0.59 g
+  "plate4_bearing_idle_horn_id79.stl",  # bearing, PETG est 0.59 g
+  "plate4_bearing_idle_horn_id81.stl",  # bearing, PETG est 0.59 g
+  "plate4_bearing_idle_horn_id83.stl",  # bearing, PETG est 0.59 g
+  "plate4_bearing_idle_horn_id85.stl",  # bearing, PETG est 0.59 g
+  "plate4_bearing_rgbn_id62.stl",  # bearing, PETG est 0.36 g
+  "plate4_bearing_rgbn_id68.stl",  # bearing, PETG est 0.36 g
+  "plateX_spare-horn_idle_horn_id55.stl",  # spare-horn, PETG est 0.59 g
+  "plateX_spare-horn_idle_horn_id56.stl",  # spare-horn, PETG est 0.59 g
+  "plate1_beak-jaw_4_id4.stl",  # beak-jaw, PETG est 11.29 g
+  "plate1_beak-tray_3_id2.stl",  # beak-tray, PETG est 29.91 g
+  "plate2_big-shell_5_id6.stl",  # big-shell, PETG est 35.39 g
+  "plate2_cover_fgb_id72.stl",  # cover, PETG est 5.27 g
+  "plate2_cover_gbgb_id74.stl",  # cover, PETG est 5.27 g
+  "plate5_ring_333_id48.stl",  # ring, PETG est 2.71 g
+  "plate5_sole_111_id44.stl",  # sole, PETG est 17.45 g
+  "plate5_sole_222_id46.stl",  # sole, PETG est 17.46 g
+]
