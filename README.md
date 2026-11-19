@@ -25,7 +25,7 @@ our code sits beside it.
 | Official policy walking in simulation | Working, headless, with a video clip. |
 | CPU training smoke test | Working. Too slow for real training. |
 | Part-weight tool (`tools/duck_mass/`) | Built and tested. Needs real part weights and a part-to-body mapping. |
-| Replica training task | In progress. |
+| Replica training task (`duck_train/`) | Built; 10 tests pass on the Mac. IMU frame and battery voltage still to be confirmed on the real robot. |
 | Jetson setup script, full training | Not started. Waits for the board. |
 
 Open questions: the battery (and so the supply voltage to train for); which JetPack the Orin
@@ -69,6 +69,10 @@ third_party/microduck_rl/  upstream training repo, git submodule at commit 25f76
 duck_train/                our small Python scripts that reuse upstream code
   model_check.py           load the robot model headless, print joints/actuators/mass
   walk_headless.py         run an official ONNX walking policy headless, write video + trace
+  replica_config.py        every replica-specific value (IMU mount, servo kp, battery PLACEHOLDER)
+  replica_task.py          registers Mjlab-Velocity-Flat-MicroDuck-Replica (51-input policy)
+  train.py                 upstream's train command, plus our replica task
+tests/                     our tests (run in upstream's environment)
 print/                     print plates and part list (see print/README.md)
 tools/                     standalone helper tools
 tasks/todo.md              plan and status
@@ -122,6 +126,37 @@ uv run --project ../../third_party/microduck_rl train Mjlab-Velocity-Flat-MicroD
 
 This took about 2.7 s per iteration on the CPU. That is fine for checking that a task builds;
 it is too slow for real training.
+
+## Replica task (51-input policy for the community replica)
+
+`Mjlab-Velocity-Flat-MicroDuck-Replica` is upstream's flat walking task with four changes for
+the replica's on-robot code: 51 policy inputs (no head/body commands), gyro and gravity in the
+vertically mounted IMU's frame, servo kp 125 instead of 200, and a battery voltage range.
+All replica values, with their sources, are in `duck_train/replica_config.py`. The battery range
+there is a PLACEHOLDER (6.0-7.5 V) until the battery is chosen.
+
+`duck_train` is not installed into upstream's environment (a `uv sync` there would remove it, and
+upstream's `train` only finds installed packages). `duck_train/train.py` registers the task and
+then runs upstream's own train entry point with all arguments passed through. Run it from `out/`:
+
+```bash
+mkdir -p out/replica_smoke && cd out/replica_smoke
+uv run --project ../../third_party/microduck_rl python ../../duck_train/train.py \
+  Mjlab-Velocity-Flat-MicroDuck-Replica \
+  --gpu-ids None --env.scene.num-envs 16 --agent.max-iterations 2 --agent.logger tensorboard
+```
+
+This finished in about 10 s and wrote `logs/rsl_rl/velocity_replica/<run>/<run>.onnx` with a
+51-wide input. Upstream's own `uv run train` / `list-envs` do not list the replica task.
+
+Tests (from the repo root; about 25 s including a 2-iteration training run):
+
+```bash
+uv run --project third_party/microduck_rl --with pytest pytest tests/ -q -s     # 10 passed
+```
+
+The `-s` output includes what the replica's published `walk.onnx` does in this task; the same
+line is written to `out/replica_walk_onnx_report.txt`.
 
 ## Interactive viewer (NOT RUN — no GUI access when this was written)
 

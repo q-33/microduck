@@ -38,11 +38,27 @@ missing its robot model and cannot train as published.
       Interactive viewer NOT run (no GUI access); command in README.
       CPU training works: walking task, 64 envs x 5 iterations, device=cpu, ~2.7 s per iteration
       (~560 env-steps/s); output in `out/train_smoke/`.
-- [ ] 3. Replica task. A new training task that differs from the official one in four ways:
+- [x] 3. Replica task. A new training task that differs from the official one in four ways:
       51 observations (no head/body commands), the vertical-IMU rotation, servo stiffness 125,
       and a supply-voltage range set from one battery setting (placeholder until the battery is chosen).
       Check: a test that the observation vector has 51 entries in the replica's order, and that
       the replica's published walk.onnx runs in this task without a shape error.
+      Done 2026-11-18 (sim only): `duck_train/replica_config.py`, `replica_task.py`, `train.py`;
+      task `Mjlab-Velocity-Flat-MicroDuck-Replica`. `tests/test_replica_task.py`: 10 passed
+      (51 inputs in walk.py order; kp 125 and voltage range in the built env; official task still
+      61; sim IMU terms equal the replica runtime's formulas; walk.onnx [1,51] runs 500 steps;
+      16-env x 2-iteration CPU training exports a 51-wide ONNX). Upstream tests still 149 passed.
+      Finding: the review had the IMU backwards. The replica feeds the policy gyro and the
+      world UP vector in the SENSOR frame (observer.py:81-85, walk.py:101-102), and its training
+      rotates the sim's body-frame values into that frame. So the sim DOES need the rotation (and a
+      sign flip on gravity); implemented that way.
+      walk.onnx in our task (no pushes, 8 envs, 10 s): never fell; with body-frame IMU inputs instead
+      it fell ~15 times per env, which supports the frame choice. It walks forward ~0.2-0.3 m/s
+      even when commanded to stand and drifts in yaw, so it does not track commands on this model.
+      NOT verified, needs the real robot: the BNO08x quaternion/gyro axis convention and the mount
+      quaternion for OUR build (stand the robot upright, check the policy input reads about (1, 0, 0));
+      the battery range (placeholder 6.0-7.5 V from the replica's constants; its README says a 6 V
+      pack); whether upstream's robot model matches the replica's (issue 17).
 - [ ] 4. Part-weight tool. Reads `print/parts.csv` plus weighed masses and writes a generated copy
       of the robot model with those masses (never hand-editing the exported model files).
       Check: total mass of the generated model equals the sum of the inputs.
