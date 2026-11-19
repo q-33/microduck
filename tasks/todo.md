@@ -80,9 +80,25 @@ State: `main` pushed at 34ea2a6. Everything below is UNCOMMITTED (commit only wh
 `tests/conftest.py`, `jetson/` (setup script + README), `README.md`, this file.
 
 Done 2026-11-18 (late):
-- Step 6, training wrapper + export + replay: built, run on the Mac CPU only (64 x 5 smoke ~2.9 s/iteration;
-  export checks all pass: input [1,51], output 14, joint_names, default pose, action scale; 32 tests pass).
-  An independent review was RUNNING when these notes were written: result not seen, treat as unreviewed.
+- Step 6, training wrapper + export + replay: built, run on the Mac CPU only, committed (bafa412).
+  INDEPENDENT REVIEW DONE 23:40: export is bit-identical to upstream's training-end ONNX with normalisation
+  inside the graph; 32 tests pass. DEFECTS TO FIX (not fixed yet, do first):
+  1. Flag guard misses underscore spellings that upstream's parser accepts (`--env.scene.num_envs 8`,
+     `--gpu_ids None`): the launcher prints one thing and trains another. Normalise `_` to `-`; add tests.
+  2. `--resume` crashes after an interrupted resumed run: upstream picks the newest run folder, which has no
+     checkpoint until the next multiple of 250 iterations. Pass `--agent.load-run <newest folder WITH a
+     checkpoint>`. Will hit long Jetson runs.
+  3. A failed start leaves an empty `out/<name>/` that then blocks the name; `--device cuda` without a GPU
+     fails with an upstream IndexError instead of a clear message.
+  4. Exporting a checkpoint outside the repo writes its absolute path into the ONNX `run_path` metadata.
+  5. Replay has no `--seed` and defaults to one robot, so "stayed up" is noisy.
+  6. Small: use `fullmatch` for run names (trailing newline accepted); clean argparse errors for bad
+     `--envs`/names; warn when exporting a 61-input official policy (the replica runtime would misread it);
+     README says "from anywhere" but the `uv run --project` path is relative; README timing line is stale.
+  Review's throwaway runs are in `out/verify-*` (ignored).
+- walk.onnx loose end SETTLED: the task is unseeded; the replica's published policy falls in about 6 % of
+  10 s single-robot runs without pushes (8/128) and about 23 % with pushes (15/64). "Never fell" earlier was
+  chance. Correct the step 3 note above when next editing.
 - Step 5, `jetson/setup_jetson.sh`: dry-run by default, `--apply` only on a Jetson, never runs sudo (prints
   the commands), deletes nothing, official sources only. shellcheck clean; simulated-Jetson dry-runs accept
   JetPack 7.2 / L4T 39.2.0 / CUDA 13.2.x and stop on 7.2.1, JetPack 6, wrong CUDA, non-Orin.
@@ -93,16 +109,14 @@ Done 2026-11-18 (late):
   frame agrees with the robot code numerically. Finding to act on: the robot's stick limits (vx +0.7/-0.5,
   vtheta 1.5 moving / 3.0 in place) are wider than the trained command range (0.4, 0.3, 1.0): cap on the
   robot or widen training. Symmetry augmentation must stay off for this task.
-- Loose end: the replica's published walk.onnx showed 1 fall at step 230 in one 10 s test run (earlier notes
-  say it never fell). The wrapper review was asked to measure the fall rate.
 
 Jetson on the duck (plan further down, APPROVED): A fit study RUNNING at time of writing (result not seen);
 B licence request posted (issue 1 on the mount repo, awaiting the author); C payload-in-training NOT started
 (needs the wrapper reviewed and the mount's mass figures from the fit study); D power and E print not started.
 
 Next, in order:
-1. Read the three pending reports if they arrived (wrapper review, fit study; plugin fixes are in the EBMC
-   repo) or re-run them; fix what the wrapper review found.
+1. Fix the six wrapper defects above (opus), re-run the tests, commit. Read the fit study report if it
+   arrived, or re-run it.
 2. Independent review of `jetson/setup_jetson.sh` (opus).
 3. Step C: payload model via `tools/duck_mass` + task `...-Replica-Loaded`.
 4. Owner: slice and print `print/prusa_xl_petg/XL01_test_piece.3mf` (head 4 PETG, head 5 PLA supports);
