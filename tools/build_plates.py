@@ -263,6 +263,23 @@ def main():
         shutil.copyfile(f, os.path.join(OUT_STL, os.path.basename(f)))
 
     # ---- parts.csv -------------------------------------------------------------
+    # The "label" column is a guess made from the source plates' object names, and
+    # some guesses are wrong. Where a part was matched to an official MicroDuck mesh
+    # (2026-11-18 fit study: aligned surface distance <= 0.07 mm), say what it is.
+    # File names keep the old label: plates and the weight tool use them as keys.
+    identified_as = {
+        "plate2_leg-link_7_id8": "left_shell (left body shell; NOT a leg link)",
+        "plate2_leg-link_8_id10": "right_shell (right body shell; NOT a leg link)",
+        "plate3_frame_m_id34": "trunk_base",
+        "plate3_frame_a_id12": "power_support (battery holder)",
+        "plate3_frame_i_id26": "banana_pcb_locker",
+        "plate3_frame_q_id42": "jaw_soft",
+        "plate2_big-shell_5_id6": "top_head_shell",
+        "plate1_beak-tray_3_id2": "bottom_head_shell",
+        "plate1_beak-jaw_4_id4": "jaw",
+        "plate2_cover_fgb_id72": "upper leg (NOT a cover; left/right not determined)",
+        "plate2_cover_gbgb_id74": "upper leg (NOT a cover; left/right not determined)",
+    }
     rows = []
     totals = {k: 0.0 for k in ("pla_solid", "pla_rough", "petg_solid", "petg_rough")}
     for n in sorted(parts, key=lambda n: (mk_plate_of[n], n)):
@@ -275,6 +292,7 @@ def main():
             "part_file": n + ".stl",
             "original_plate": parts[n]["orig_plate"],
             "label": parts[n]["label"],
+            "identified_as": identified_as.get(n, ""),
             "original_name": parts[n]["orig_name"],
             "earlier_split_plate": parts[n]["source_plate"],
             "bbox_x_mm": round(sz[0], 2), "bbox_y_mm": round(sz[1], 2), "bbox_z_mm": round(sz[2], 2),

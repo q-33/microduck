@@ -82,7 +82,8 @@ State: `main` pushed at 34ea2a6. Everything below is UNCOMMITTED (commit only wh
 Done 2026-11-18 (late):
 - Step 6, training wrapper + export + replay: built, run on the Mac CPU only, committed (bafa412).
   INDEPENDENT REVIEW DONE 23:40: export is bit-identical to upstream's training-end ONNX with normalisation
-  inside the graph; 32 tests pass. DEFECTS TO FIX (not fixed yet, do first):
+  inside the graph. The six defects below were ALL FIXED and retested on the Mac CPU on 2026-11-19 00:03
+  (commit 1f6e5af; 67 tests pass; fixes not re-reviewed; nothing run on a GPU). What they were:
   1. Flag guard misses underscore spellings that upstream's parser accepts (`--env.scene.num_envs 8`,
      `--gpu_ids None`): the launcher prints one thing and trains another. Normalise `_` to `-`; add tests.
   2. `--resume` crashes after an interrupted resumed run: upstream picks the newest run folder, which has no
@@ -110,13 +111,12 @@ Done 2026-11-18 (late):
   vtheta 1.5 moving / 3.0 in place) are wider than the trained command range (0.4, 0.3, 1.0): cap on the
   robot or widen training. Symmetry augmentation must stay off for this task.
 
-Jetson on the duck (plan further down, APPROVED): A fit study RUNNING at time of writing (result not seen);
+Jetson on the duck (plan further down, APPROVED): A fit study DONE (should fit; see the plan);
 B licence request posted (issue 1 on the mount repo, awaiting the author); C payload-in-training NOT started
 (needs the wrapper reviewed and the mount's mass figures from the fit study); D power and E print not started.
 
 Next, in order:
-1. Fix the six wrapper defects above (opus), re-run the tests, commit. Read the fit study report if it
-   arrived, or re-run it.
+1. (done 2026-11-19: wrapper defects fixed, fit study in, parts.csv got an `identified_as` column.)
 2. Independent review of `jetson/setup_jetson.sh` (opus).
 3. Step C: payload model via `tools/duck_mass` + task `...-Replica-Loaded`.
 4. Owner: slice and print `print/prusa_xl_petg/XL01_test_piece.3mf` (head 4 PETG, head 5 PLA supports);
@@ -143,15 +143,30 @@ Waiting on others / owner:
 ## Plan: Jetson on the duck (written 2026-11-18, APPROVED by the owner 23:21)
 
 Status 23:25: B posted as https://github.com/adammong/microduck-jetson-mount/issues/1 (awaiting the author).
-A (fit study) running as a sub-agent. C starts when the training wrapper (step 6) has landed.
+A (fit study) done. C starts when the training wrapper fixes have landed.
 
 Goal: our replica walks carrying the Orin Nano and its battery on the adammong v07 mount, with a 51-input
 policy trained for that load.
 
-- [ ] A. Fit study, read-only: download the mount repo outside ours (git-ignored `external/`), compare its
-      shell/torso reference (official Pollen model) with OUR replica's printed torso and front shell
-      (`print/parts.csv`, the replica STEP/STLs). Check: a written list of the contact surfaces the mount uses
-      (shoulder seats, front shell lobes, two torso M4 bosses at +-40 mm) and whether each exists on our parts.
+- [x] A. Fit study, read-only. DONE 2026-11-18 23:59 (design files only; nothing printed or sliced).
+      Result: SHOULD FIT. Our replica's body shells, trunk base, power support and head shells ARE the
+      official meshes (aligned surface distance <= 0.07 mm), so every surface the v07 mount touches matches.
+      `print/parts.csv` mislabels them: "plate2_leg-link_7/8" are the left/right body shells and the two
+      "covers" are the upper legs (fix the labels). The mount needs no screws into the robot: the two M4
+      bosses are on its own saddle. Clearances are small (0.2-1.4 mm at the shoulder seats, 0.5 mm between the
+      front-gate pads and the neck servo), so any XY scaling of our prints or PETG shrink matters.
+      CANNOT TELL from files, measure on the printed torso before printing the mount: the replica's battery
+      pack size and leads (the saddle's rear beam is ~4 mm behind the official battery envelope and blocks
+      removing the battery rearward); where the switch, servo board, IMU and external cables sit; what fills
+      the ~4 mm side hole at (-38, +-32, 35) mm that the side arm half-covers; the replica's different FEET
+      against the Jetson tray at large hip pitch.
+      Print notes: saddle 241 x 120 x 37 mm, heavy supports + brim, thinnest wall 1.0 mm (weak); front gate
+      better laid with -x up; flip both small Jetson gates upside down; tray needs no supports. On the -y
+      shoulder seat use a ~0.3 mm pad or none (gap measured 0.31 mm, not the nominal 1 mm).
+      Payload for step C (the mount author's estimates, not weighed): mass 0.4476 kg; centre of mass
+      (15.00, 3.65, 28.06) mm in the trunk frame; inertia about it, kg m^2: Ixx 1.0758e-3, Iyy 7.5645e-3,
+      Izz 7.8842e-3, Ixy 2.833e-4, Ixz 1.836e-4, Iyz 5.32e-5; attached to trunk_base with no offset.
+      Mount repo copy: `external/microduck-jetson-mount` (ignored; its .git is ~288 MB by accident).
 - [ ] B. Licence: the mount repo has none. Ask its author (GitHub issue, owner's yes needed before posting)
       to add one. Until then: print for our own use, link only, nothing of theirs in our repo.
 - [ ] C. Payload in training: add the mount + Jetson + battery as a rigid payload on the trunk in a GENERATED

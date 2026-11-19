@@ -163,8 +163,9 @@ they carry servo torque or the robot's weight:
 - `plate3_frame_dfbdfbbbbb1_id70`: bracket with two horn interfaces, likely at
   the hip.
 - `plate3_frame_n_id36` and `_o_id38`: servo cradles with mounting bosses.
-- `plate2_leg-link_7_id8` and `_8_id10`: long open shells with a horn disc at
-  one end (leg links / servo housings).
+- `plate2_leg-link_7_id8` and `_8_id10`: the LEFT and RIGHT BODY SHELLS (official
+  `left_shell` / `right_shell`), not leg links: the file name is an early wrong
+  guess. They carry the Jetson mount's shoulder seats and front prongs.
 - `plate1_foot-housing_grbrgn_id64` and `_thngthm_id66`: cylindrical foot or
   ankle housings with a horn opening and screw ears.
 - `plate3_frame_k_id30` and `_l_id32`: link plates with horn-sized holes. These
@@ -212,7 +213,11 @@ Not verified:
 - The wipe tower's real footprint, and whether it fits the 80 x 80 mm corner.
 - Fit, strength or shrink of any part in PETG or PLA.
 - The part labels (frame, leg-link, cover...) and the nylon-candidate list
-  come from reading the geometry. They are not the author's names.
+  come from reading the geometry. They are not the author's names, and some are
+  wrong. `parts.csv` has an `identified_as` column for the 11 parts matched to an
+  official MicroDuck mesh on 2026-11-18 (the two "leg-link" parts are the body
+  shells; the two "cover" parts are upper legs). File names keep the old labels
+  because the plates and the weight tool use them as keys.
 - The handoff note says the largest part is "about 123 x 92 x 46 mm". In print
   orientation no part has that size. The largest footprint is the beak tray,
   91.8 x 117.1 mm, and the tallest part is the big shell at 116.1 mm.
